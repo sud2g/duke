@@ -1,0 +1,446 @@
+.list_Table{
+	width: 100%;
+	height: 80px;
+}
+.editorImgHid{
+	display: none;
+}
+.editorImgShow{
+	display:block;
+}
+/*
+*图书list样式
+*/
+.list_BookTable{
+	width: 100%;
+	height: 105px;
+	table-layout:fixed;
+}
+
+.list_tableLeft{
+	width: 100%;
+	height:  100%;
+}
+.list_tableLeftTd{
+	width:115px;
+	text-align: center;
+	vertical-align: middle;
+}
+.list_tableLeftBookTd{
+	width:110px;
+	text-align: center;
+	vertical-align: middle;
+}
+.list_tableLeftBookTd img{
+	width:62px;
+	height:82px; 
+	margin-left: -1px;
+	margin-top: 1px;
+}
+.list_tableLeftTd img{
+	width:87px;
+	height:57px; 
+	margin-left:0px;
+	margin-top: 1px;
+}
+.list_tableMidTd{
+	text-align: left;
+	vertical-align: middle;
+}
+.list_MiddleContent{
+	width:100%;
+	overflow:hidden;
+	table-layout:fixed;
+	WORD-WRAP:break-word;
+}
+.list_MiddleBookContent{
+	width:100%;
+}
+/*
+*bdlive列表样式
+*/
+.list_MiddleContentBdLive{
+	font-size:15px;
+	color:#383838;;
+	font-family: '黑体';
+	overflow:hidden; 
+	text-overflow: ellipsis; 
+}
+/*
+*点播样式1,top内容放大,TOP内容占2行
+*/
+.list_middleDemand1Top{
+	font-size: 15px;
+	color: #383838;
+}
+.list_middleDemand1{
+	font-size: 12px;
+	color: #9E9E9E;
+	font-family: '黑体';
+	vertical-align: bottom;
+	overflow:hidden; 
+	line-height: 15px;
+	max-height: 30px;
+	display:block;
+}
+.list_limitDiv{
+	width:100%;
+	max-height:38px;
+	overflow-y:hidden;
+	line-height:19px;
+	vertical-align:top;
+	display:block;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+/*
+*点播样式2,top内容放大,且只占一行
+*/
+.list_middleDemand2Top{
+	font-size: 16px;
+	color: #383838;
+	vertical-align: top;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.list_middleDemand2mid{
+	font-size: 12px;
+	color: #9E9E9E;
+	overflow: hidden;
+	max-height: 30px;
+	line-height: 15px;
+	display:block;
+}
+.list_middleDemand3mid{
+	font-size: 12px;
+	color: #9E9E9E;
+	overflow: hidden;
+	max-height: 30px;
+	line-height: 15px;
+	display:block;
+}
+.list_middleDemand3Bottom{
+	font-size: 12px;
+	color: #9E9E9E;
+}
+.list_middleDemand2Bottom{
+	font-size: 12px;
+	color: #9E9E9E;
+}
+/*
+*点播样式3,top放大,内容只有2行
+*/
+.list_middleDemand3Top{
+	height:32px;
+	font-size: 15px;
+	color: #383838;
+}
+.list_middleDemand3{
+	font-size: 12px;
+	vertical-align: bottom;
+	color: #9E9E9E;
+	line-height: 14px;
+}
+.list_limitSubDiv{
+	width:100%;
+	height:38px;
+	overflow-y:hidden; 
+	line-height:19px;
+	vertical-align:bottom;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.list_limitSubDivBottom{
+	width: 100%;
+	overflow-y: hidden;
+	vertical-align: bottom;
+	line-height: 13px;
+	margin: auto;
+}
+/*
+*点播样式4,top内容放大,内容只有2行,专题有这样的样式
+*/
+.list_middleDemand4Top{
+	font-size: 15px;
+	color: #383838;
+	vertical-align: top;
+}
+.list_middleDemand4{
+	font-size: 12px;
+	color: #9E9E9E;
+	vertical-align: top;
+	height: 28px;
+	line-height: 14px;
+}
+/*
+*图书列表样式
+*/
+.list_middleBookTop{
+	font-size: 15px;
+	color: #383838;
+}
+.list_bookdiv{
+	max-height: 36px;
+	width:100%;
+	overflow-y:hidden;
+	line-height:18px;
+	margin-bottom: 8px;
+}
+.list_middleBookBottom{
+	font-size: 13px;
+	color:#9E9E9E;
+	vertical-align: bottom;
+}
+.list_middleBookBottom_top{
+	vertical-align: bottom;
+	font-size: 12px;
+	color: #9E9E9E;
+	height: 14px;
+	line-height: 14px;
+}
+.list_middleBookBottom_bottom{
+	vertical-align: bottom;
+	font-size: 12px;
+	color: #9E9E9E;
+	line-height: 14px;
+}
+.list_limitBookDiv{
+	width:100%;
+	max-height:26px;
+	overflow-y:hidden;
+	line-height:13px;
+	font-size:12px;
+	color: #9E9E9E;
+}
+.middleBookBottom_top{
+	font-size:12px;
+	color: #9E9E9E;
+}
+.list_middleDemand5Top{
+	font-size: 15px;
+	color: #383838;
+}
+.list_limitSubDiv5 {
+	width: 100%;
+	max-height: 19px;
+	line-height: 19px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.list_limitSubDivBottom5 {
+	width: 100%;
+	max-height : 28px;
+	overflow-y: hidden;
+	line-height: 14px;
+	margin: auto;
+}
+/*
+*电视直播样式
+*/
+.list_MiddleContentTop{
+	font-size: 16px;
+	color: #383838;
+	vertical-align:top;
+	font-family: '黑体';
+	overflow:hidden; 
+	text-overflow: ellipsis; 
+	display:block;
+	white-space:nowrap;
+	margin-top: 0px;
+}
+.list_MiddleContentMid{
+	font-size: 12px;
+	color: #9E9E9E;
+	font-family: '黑体';
+	overflow:hidden; 
+	text-overflow: ellipsis;
+	display:block;
+	white-space:nowrap;
+	margin-top: 10px;
+}
+.list_MiddleContentBottom{
+	font-size: 12px;
+	color: #9E9E9E;
+	font-family: '黑体';
+	overflow:hidden; 
+	text-overflow: ellipsis;
+	display:block;
+	white-space:nowrap;
+	margin-top: 2px;
+}
+.list_Line{
+	width: 2px;
+	text-align: center;
+	vertical-align: middle;
+}
+.list_Line img{
+	height:48px;
+}
+.list_Play{
+	width:48px;
+	vertical-align: middle;
+}
+.nolist_Play{
+	width: 20px;
+}
+.list_Play img{
+	width:60px; 
+	margin-left:10px;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+	}
+th,td { padding: 0; }
+
+.List_Cont_recommend_div{
+	border-top: 1px solid #EBEBEB;
+}
+.List_dashed_recommend_div{
+	border-top: 1px dashed #dedede;
+}
+.list_bgImgDiv {
+	text-align: center;
+	vertical-align: middle;
+	width: 89px;
+	height: 59px;
+	margin: auto;
+	margin-left: 15px;
+	background: url('../images/listImgDefault.png') no-repeat;
+}
+
+.list_bgImgBookDiv {
+	text-align: center;
+	vertical-align: middle;
+	width: 64px;
+	height: 84px;
+	margin: auto;
+	background: url('../images/listImgDefault-book.png') no-repeat;
+}
+/*
+*频道列表
+**/
+.float_table{
+	width: 50%;
+	height:40px;
+	float: left;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #383838;
+	line-height:40px;
+}
+.d1 {
+	width: 158px;
+	padding: 0px 0 0 1px;
+	float: left;
+	border-bottom: #cecece solid 1px;
+	border-right: #cecece solid 1px;
+	background-color: #ececec;
+}
+.d2 {
+	font-size: 14px;
+	color: #383838;
+	margin: 10px 0 0 0;
+	height:30px;
+	vertical-align: middle;
+}
+/*
+*app
+*/
+.list_tableLeftAppTd{
+	margin-left: 0px;
+	width:105px;
+	text-align: center;
+	vertical-align: middle;
+}
+.list_tableLeftAppTd img{
+	width:75px;
+	height:75px; 
+	text-align:left;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+	border-radius: 12px;
+}
+.list_down{
+	width: 76px;
+	text-align: center;
+}
+.nolist_down{
+	width: 20px;
+}
+.list_down img{
+	width:46px;
+}
+.list_bgImgAppDiv {
+	text-align: left;
+	vertical-align: middle;
+	width: 75px;
+	height: 75px;
+	margin-left: 15px;
+	background: url('../images/Bg_Icon.png') no-repeat;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+	border-radius: 12px;
+}
+.list_limitSubDiv6 {
+	width: 100%;
+	max-height: 19px;
+	line-height: 19px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+/*
+*横排列表
+**/
+.vertiList{
+	margin: 0px 5px;
+	text-align: left;
+}
+.vertiListLivAud{
+	margin: 0px 5px;
+	text-align: left;
+}
+.vertiList div{
+	width: 33.333%;
+	margin: 15px 0px 0px;
+	display: inline-block;
+	vertical-align: top;
+}
+.vertiList a{
+	display: block;
+	margin: 0 auto;
+}
+.vertiList img{
+	width: 95%;
+	border: 1px solid rgba(206, 206, 206, 0.4);
+	margin-bottom: 4px;
+}
+.vertiList label{
+	display: block;
+	max-height: 15px;
+	overflow: hidden;
+	font-size: 15px;
+	color: #000000;
+	line-height: 15px;
+	text-align: center;
+	width: 95%;
+	overflow-y: hidden;
+}
+.leftDiv{
+	text-align: left;
+}
+.leftDiv label{
+}
+.centerDiv{
+	text-align: center;
+}
+.centerDiv label{
+	margin: 0px auto;
+}
+.rigthDiv{
+	text-align: right;
+}
+.rigthDiv label{
+	float: right;
+}

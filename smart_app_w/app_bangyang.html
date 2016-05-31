@@ -1,0 +1,2686 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://zhjn.qingk.cn/channel.do?channelID=12517&copID=801487 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		
+		<meta http-equiv="Cache-control" content="no-cache">
+		<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	
+		<script type="text/javascript" src="source/context.js"></script>
+		<script type="text/javascript" src="js/hm.js"></script>
+		<script type="text/javascript" src="js/ajaxUtils.js"></script>
+		<script type="text/javascript" src="js/jq.js"></script>
+		<script type="text/javascript" src="source/app_bangyang.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/1407463245971.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/ico/1407463245971.png">
+		<title>昆仑视屏-油田新闻-频道</title>
+		
+
+		
+	<script type="text/javascript" src="js/common.js"></script>
+	<script>
+	/*
+			$(function(){
+				$('ul.promptu-menu').promptumenu({width:Swidth - 30, height:'auto', rows: 1, columns: 1, direction: 'horizontal', pages: false});		
+			});
+			*/
+			document.write("<style>.tb1{width:" + Swidth + "px;height:60px;border-spacing:0}.tb2{width:" + Swidth + "px;height:94px;border-spacing:0}.dv1{width:" + (Swidth-15)/2 + "px;height:" +  ((Swidth-15)/3.2) + "px;float:left;margin-top:5px;margin-left:5px;padding:0 0;}.dv2{width:" + (Swidth-20)/3 + "px;height:" + (Swidth-20)/3*1.3 + "px;float:left;margin-top:6px;margin-left:5px;} #list{width:"+(Swidth)+"px} .sortWi{width:"+(Swidth-25)+"px;} </style>");
+		
+			var widPecent=Swidth/320;
+		</script>
+	</head>
+
+	<body onload="ckCbo()">
+	
+
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-rim-auto-match" content="none">
+ <meta http-equiv="cache-control" content="max-age">
+<link rel="shortcut ICON" href="http://qingk.cn/img/qingkfavio.ico" type="”image/x-icon”">
+<script type="text/javascript">
+var nativeCOPID="801487";
+var nativeChannelID="12517";
+
+</script>
+<script>
+
+function todoApp(title0,url0){
+	//定义延迟时间
+			var outTime = 600;
+			var title=title0;
+			title=title.replaceAll("\\(","");
+			title=title.replaceAll("\\)","");
+			var http=url0;
+			var s = window.navigator.userAgent;
+			
+			var T = {
+            isFromAndroid: /android/gi.test(s),
+            isFromIos: /iphone|ipod|ios/gi.test(s),
+            isFromWx: /MicroMessenger/gi.test(s),
+            isFromQQ: /mobile.*qq/gi.test(s),
+            isFromUC: (/ucbrowser/gi.test(s))||(/oppobrowser/gi.test(s)),
+           // isFromUC: (/ucbrowser/gi.test(s)),
+            isFromQQBrower: /mqqbrowser[^LightApp]/gi.test(s),
+            isFromQQBrowerLight: /MQQBrowserLightApp/gi.test(s),
+            isFromsansun:/samsungbrowser/gi.test(s)||/samsung/gi.test(s)
+            }
+			var ios5_8=false;
+			var ios9=false;
+			
+			var agent = navigator.userAgent.toLowerCase() ;
+			var version;
+			if(T.isFromIos){
+			if(agent.indexOf("like mac os x") > 0){
+			    //ios
+			    var regStr_saf = /os [\d._]*/gi ;
+			    var verinfo = agent.match(regStr_saf) ;
+			    version = (verinfo+"").replace(/[^0-8|_.]/ig,"").replace(/_/ig,".");
+			}
+
+			var version_str = version+"";
+			if(version_str != "undefined" && version_str.length >0){
+			    version=version.substring(0,1);
+			    if(version>=8){
+			    	ios5_8=true;
+
+			    }
+			    else{
+			    	ios9=true;
+			    }
+			}
+			}
+
+			
+		
+            	var isFrompc=!(T.isFromAndroid)&&!T.isFromIos;
+				//var isFrompc=!(T.isFromAndroid);
+				var d2="qrload.do?copID="+nativeCOPID+"&channelID="+nativeChannelID+"&url="+http+"&title="+encodeURI(encodeURI(title));	
+			  
+				/*if(isFrompc){
+					location.href=d2;
+					return;
+				}*/
+				var  callWxShare= function (t) {
+                var e = http;
+              
+                var d=ppqilu.BASEPATH+"uploadapks/qingk-2015.apk";
+               
+                var dIos="https://itunes.apple.com/us/app/qing-kuai-shi-xun/id1062725534?l=zh&ls=1&mt=8";
+              
+             
+                var callbackUrl=encodeURIComponent(ppqilu.BASEPATH+"clientToRedisAndroid.do?keyvalue="+window.localStorage.getItem("virtualId"));
+               
+                var remoteurl="qingk://weixin?type=1&description=&title="+encodeURI(title)+"&webpageUrl="+http+"&callbackurl="+callbackUrl;
+                   // i = http,
+                 //   n = i[0].indexOf("?") > 0 ? "&" : "?",
+                  //  o = i[1] ? "#" + i[1] : "",
+                  //  a = 1 == t ? "fromsharefriend=1" : "fromsharetimeline=1",
+                  //  e = i[0] + n + a + o;
+             //void shareIos({remoteurl:remoteurl,appurl:dIos})
+                var notime=(new Date()).getTime();
+              
+              	  return isFrompc ? void(location.href=d2) : T.isFromWx ? void shareTip("wxwebview") : T.isFromQQ ? void shareTip("qqwebview") : T.isFromUC ? void ucWxShare(t) : T.isFromQQBrower ? void qbWxShare(t) : T.isFromQQBrowerLight 
+              			  ? void(Alert("请在浏览器的菜单中选择分享到微信")) :T.isFromsansun? void sharesum({remoteurl:remoteurl,appurl:d}):ios5_8? void openIos(remoteurl,function(){
+              				  var lesttime=(new Date()).getTime();
+              				//没装-28
+              				 
+              				  if((lesttime-notime-1300)<0){
+              					 location.href=dIos;
+              				 }else{
+              					
+              				 }
+              				 
+              			  }):ios9?void shareIos({remoteurl:remoteurl,appurl:dIos}):
+                        void isQbInstalled({
+                        testUrl: remoteurl,
+                        onSucc: function () {},
+                        onFail: function () {
+                      
+                        	setTimeout(function(){
+                        		
+                        		new $ppqilu_ajax({"cls" : "RedisOperate_isOpen", "key" : window.localStorage.getItem("virtualId")},function(ajaxObj){
+                        			var vatlue=ajaxObj.value;
+                        			if(vatlue==null||vatlue==""){
+                        				if(T.isFromAndroid){
+                                            location.href = d;
+                                           }else{
+                                           	
+                                          		 location.href=d2;
+                                           }
+                        				
+                        			}
+                            	});  
+                        	},1500)
+                        	 
+                        	
+                        	
+                           
+                        }
+                    })
+          		  }
+				var sharesum=function(url){
+				
+					window.open(url.remoteurl);
+				
+                	setTimeout(function(){
+                		
+                		new $ppqilu_ajax({"cls" : "RedisOperate_isOpen", "key" : window.localStorage.getItem("virtualId")},function(ajaxObj){
+                			var vatlue=ajaxObj.value;
+                			
+                			if(vatlue==null||vatlue==""){
+                				alert("您需要下载客户端插件");
+                                    location.href = url.appurl;
+                                  
+                				
+                			}
+                    	});  
+                	},1000)
+				}
+				
+				var shareIos=function(url){
+				
+					
+					//var time = (new Date()).getTime();
+					
+						window.location.href=url.remoteurl;
+					
+				
+					setTimeout(function() {
+    				location.href = url.appurl;
+ 				 	location.history.back();
+ 				 	}, 2200);
+  					
+				
+                	/* setTimeout(function(){
+                	
+                		 var now = (new Date()).getTime();
+                		
+                	        if((now - time)<400) {
+                	        	
+                	        	window.location.href=url.appurl;
+                	        	
+                	        }
+                	
+                	},300); */
+				}
+				
+				var openIos=function(url,callback){
+					 if (!url) {
+					        return;
+					    }
+					    var node = document.createElement('iframe');
+					    node.style.display = 'none';
+					    var body = document.body;
+					    var timer;
+					    var clear = function(evt, isTimeout) {
+					       (typeof callback==='function') &&  callback(isTimeout);
+					        window.removeEventListener('pagehide', hide, true);
+					        window.removeEventListener('pageshow', hide, true);
+					        if (!node) {
+					            return;
+					        }
+					        node.onload = null;
+					        body.removeChild(node);
+					        node = null;
+					    };
+					    var hide = function(e){
+					        clearTimeout(timer);
+					        clear(e, false);
+					    };
+					    window.addEventListener('pagehide', hide, true);
+					    window.addEventListener('pageshow', hide, true);
+					    node.onload = clear;
+					    node.src = url;
+					    body.appendChild(node);
+					    var now = +new Date();
+					    //如果事件失败，则1秒设置为空
+					    timer = setTimeout(function(){
+					        timer = setTimeout(function(){
+					          var newTime = +new Date();
+					          if(now-newTime>1300){
+					            clear(null, false);
+					          }else{
+					            clear(null, true);
+					          }
+					        }, 1200);
+					    }, 60);
+					
+				}
+				var isQbInstalled= function (t) {
+                t = t || {};
+                var e = t.testUrl,
+                    i = t.onSucc,
+                    n = t.onFail,
+                    o = Date.now(),
+                    a = 0,
+                    r = navigator.userAgent,
+                    s = 0,
+                    c = r.match(/iphone\s*os\s*\d/gi);
+                c && (s = parseInt(c[0].split(" ")[2])),
+               		 e = e.replace(/http:\/\//gi, "");
+                var l = function () {
+                        o += 1e3,
+                        a += 1,
+                        3 > a ? setTimeout(l, 1e3) : Math.abs(o - Date.now()) > 1e3 ? i && i() : n && n()
+                    };
+             
+               
+                if (s > 8) location.href = e;
+                else {
+                        var d = document.createElement("iframe");
+                        d.src = e,
+                        d.id = "qbInstallValidator_" + Date.now(),
+                        d.style.display = "none",
+                        document.body.appendChild(d)
+                    }
+                return setTimeout(l, 1e3),
+                setTimeout(function () {
+                        d && d.parentNode && d.parentNode.removeChild(d)
+                    }, 5e3),
+                !1
+            }
+				
+			   var shareTip=function (e) {
+              Alert("请在浏览器的菜单中选择分享到微信");
+            }
+			
+			
+			  var  ucWxShare=function (t) {
+               Alert("请在浏览器的菜单中选择分享到微信");
+
+				/*  var e = this.config,
+                    i = this.shareUrlMap.wx,
+                    n = {
+                        ios: "kWeixinFriend",
+                        android: "WechatTimeline"
+                    };
+                1 == t && (n.ios = "kWeixin", n.android = "WechatFriends"),
+                T.isFromIos ? ucbrowser && ucbrowser.web_share(e.title, e.description, i, n.ios, "", "@手机腾讯网", "") : T.isFromAndroid && ucweb && ucweb.startRequest("shell.page_share", [e.title, e.description, i, n.android, "", "", ""])
+          */   }
+          
+          var qbWxShare=function (t){
+           Alert("请在浏览器的菜单中选择分享到微信");
+          }
+			
+				callWxShare();
+				
+				
+				
+			
+				
+				//判断手机
+		
+			
+			
+			
+			
+			
+			/*
+			
+			
+			var isIDeviceApple = (/iphone|ipad/gi).test(navigator.appVersion.toLowerCase()); //IOS手机
+			var isAndroidAndRo = (/and/gi).test(navigator.appVersion.toLowerCase()); //android手机
+	
+			
+				
+				outTime = 3000;
+				var callbackUrl=ppqilu.BASEPATH+"clientToRedisAndroid.do?keyvalue="+window.localStorage.getItem("virtualId");
+				callbackUrl=encodeURIComponent(callbackUrl);
+				var goUrl = "qingk://weixin?type=1&description=&title="+encodeURI(title)+"&webpageUrl="+http+"&callbackurl="+callbackUrl;
+				//window.location.href=goUrl;
+				if(isAndroidAndRo){
+				window.open(goUrl);
+				}else{
+				window.location.href="mqqbrowser://url=qktest.cn/content.do?id=24384&copID=801537&channelID=12020&classifiedid=0&fromsharefriend=1";
+				}
+				setTimeout(function(){
+				new $ppqilu_ajax({"cls" : "RedisOperate_isOpen", "key" : window.localStorage.getItem("virtualId")},function(ajaxObj){
+						var value = ajaxObj.value;
+					
+						if(value==null||value==""){
+							//alert("即将为您下载客户端，请点击确定");
+							if(isAndroidAndRo){
+							window.location.href = ppqilu.BASEPATH+"apk/qingk.apk";
+							}else if(isIDeviceApple){
+							window.location.href="https://itunes.apple.com/us/app/di-yi-shi-ting/id581128591?l=zh&ls=1&mt=8";
+							
+							}
+							//window.location.href="http://qktest.cn/apk/qingk.apk";
+						}
+					});
+				},outTime);
+			}else{
+				location.href="qrload.do?copID=801487&channelID=12517&url="+http+"&title="+encodeURI(encodeURI(title));
+			}
+			
+	*/		
+			
+}
+</script>
+<style type="text/css">
+	body{ 
+    	-webkit-user-select:none;
+    	-moz-user-select:none;
+    	-ms-user-select:none;
+    	-o-user-select:none; 
+    	user-select:none;
+   	}
+
+* {
+	font-size: 16px;
+	font-family:'Helvetica','Arial','黑体';
+
+}
+	#cont *{
+		font-size: inherit;			
+	}
+
+._qingk{position:fixed;
+		border-left:1px solid transparent;
+		bottom:10px;
+		padding-left:0px;
+		z-index:99;
+		-webkit-user-select:none;
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+		-webkit-transform:translate3d(0,0,0);
+		}
+		
+.ktimg{
+	float: right;margin-right: 15px;
+}
+.ktimg img{
+	width: 28px;
+}
+.ktimg2 {
+	float: right;margin-top: -37px;
+	height: 40px;width: 30px;
+	margin-right: 15px;
+
+}
+.ktimg2 img{
+	width: 28px;
+}
+.titleTdleft{
+text-align: left;
+}
+.titleImgleft{
+margin-left: 10px;
+}
+.titleTdRight{
+text-align: right;
+}
+.titleImgRight{
+margin-right: 10px;
+}
+.footerpage{
+	color: black;
+}
+.footerpage *{
+	color: black;
+}
+#hm_t_undefined{
+	display: none;
+}
+#customerName{
+	color: #009ffa;
+}
+</style>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?301b61aafa0a82b3e946be81568ae47c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<div style="width: 100%;height: 0px;overflow: hidden;">
+<img src="images/ico/1407463245971.png" style="display: block;" id="qingkzhuaquiconN">
+</div>
+<script type="text/javascript">
+var qingkzhuaquicon=null;
+</script>
+<!--<div id="loaddingimg" style="z-index: 12; width: 32px; height: 32px; position: absolute; left: 703px; top: 434px; display: none;">
+<img src="images/ico/loading2.gif">
+</div>-->
+
+
+<script type="text/javascript">
+//cookie添加缓存
+
+		var cookie= document.cookie;
+		
+		var cooks=cookie.split(";");
+		
+		for(var i=0;i<cooks.length;i++){
+		var cook=cooks[i];
+		//mycook.innerHTML+=(cook.substring(0,cook.indexOf("="))+"==="++"<br/>")
+		
+		var cook=cooks[i];
+		cook=cook.replace(/(^\s*)/, "");
+		
+		cook=cook.replace(/\"/g, "");
+	
+		var key=cook.substring(0,cook.indexOf("="));
+		var value=cook.split(key+"=")[1];
+		
+		
+		if(key!="sessionId"){
+		//window.localStorage.setItem(key,value);
+			if(window.localStorage.getItem(key)==null||window.localStorage.getItem(key)==""){
+				if(value!=""&&value!=null&&value!=" "){	
+				window.localStorage.setItem(key, value)
+				}else{
+				window.localStorage.removeItem(key);
+				}
+			}
+			
+			
+		}
+		var vall="";
+		if(value!=null){
+		vall=value.replace(/\"/g, "");
+		}
+		if(vall==null||vall==""){
+		window.localStorage.removeItem(key);
+		}
+		
+		}
+		if(cookie.indexOf("customerId")==-1){
+		window.localStorage.removeItem("customerId");
+		}
+	
+
+
+	var openFlag=0;//0本机 1正式
+  	//document.getElementById("noJsJudge").style.display="none";
+  	var k_flag=8;
+     var onmessage = function(e) {
+       var data = e.data;
+      
+   		var bool=false;
+   		try{
+   		bool=(data.indexOf("1:")==0);
+   		}catch(e0){
+   		bool=false;
+   		}
+   	
+   		if(bool){
+   		
+   		data=data.split("1:")[1];
+       	var key=data.split(":;:")[0];
+       	var value=data.split(":;:")[1];
+       	window.sessionStorage.setItem(key,value);
+   		}else{
+       	try{
+       	
+       	var ds=data.split(":;:");
+       	var d=ds[0];
+       	var s=ds[1];
+       	
+       	if(d!=null&&d!=""&&d!="null"){
+       	if(s!=null&&s!=""&&s!="null"){
+       	window.localStorage.setItem(d,s);
+       	}else{
+   	   window.localStorage.removeItem(d);
+       	}
+       	}
+       	k_flag+=1;
+       	
+       	if(k_flag>5){
+       	checkeUserNameIs();
+       	}
+       	
+       	}catch(e){}
+       }
+    }
+    //监听postMessage消息事件
+   
+    if (typeof window.addEventListener != 'undefined') {
+      window.addEventListener('message', onmessage, false);
+    } else if (typeof window.attachEvent != 'undefined') {
+      window.attachEvent('onmessage', onmessage);
+    }
+  
+  
+  	function defaultimg(ele){
+  		ele.src="img/homeless.png"
+  	}
+  	function lazyAll(){
+
+  //	return;
+  		var array=new Array();
+  		var imgs;
+  		try{
+  		imgs=$(".imgLazy").objs();
+  		}catch(e){
+  		imgs=$(".imgLazy");
+  		}
+  		for(var i=0;i<imgs.length;i++){
+  		
+  			var img=imgs[i];
+  			
+  			var data=img.getAttribute("data-original");
+  		
+  			var src=img.getAttribute("src");
+			if(data!=null&&src!=null){
+		
+			var srcP=src;
+		  	
+		  	img.complete=false;
+		  	if(data.indexOf("http://")!=0){
+		  	img.src=ppqilu.IMG_BASEPATH+data;
+		  	}else{
+		  	img.src=data;
+		  	}
+		  	
+		  	
+		  	img.onload=function(){
+		  	var name=this.className;
+			this.className=name.split("imgLazy")[1]==null?"":name.split("imgLazy")[1];
+		  	}
+		  	img.onerror=function(){
+		  	var name=this.className;
+			this.className=name.split("imgLazy")[1]==null?"":name.split("imgLazy")[1];
+			this.src=srcP;
+		  	}
+		  	
+		  
+		  	
+		  	
+			}
+			
+  		}
+  
+	}
+	
+	function lazyAll2(){
+  		setTimeout(function(){
+  		var imgs=$("img.imgLazy");
+    		$(imgs).each(function(){
+    			var im=$(this).attr("data-original");
+    			if(im.indexOf("http://")!=0){
+    			$(this).attr("data-original",ppqilu.IMG_BASEPATH+im);
+    			}
+    			$(this).lazyload({
+    				effect:"fadeIn",
+    			
+    				load:function() {
+    				$(this).removeClass("imgLazy");
+    			}
+    			});
+    		});
+  		},200)
+	}
+	function lazy(obj){
+	/*
+	setTimeout(function(){
+  		var imgs=$(obj).find("img.imgLazy");
+    		$(imgs).each(function(){
+    			$(this).lazyload({
+    				effect:"fadeIn",
+    				threshold :5000,
+    				failurelimit : 100,
+    				load:function() {
+    				$(this).removeClass("imgLazy");
+    			}
+    			});
+    		});
+  		},50);
+  		*/
+	}
+	
+function loadingShow(){
+	
+	var width=WindowWidth;
+	var height=window.screen.height;
+	 var t1=document.body.scrollTop;
+	var top=(height-32)/2;
+	var left=(width-32)/2;
+
+	$("#loaddingimg").css("left",left+"px");
+	$("#loaddingimg").css("top",(top+t1)+"px");
+	$("#loaddingimg").show();
+	
+	
+}
+function loadingDis(){
+	
+	$("#loaddingimg").hide();
+	
+}
+
+function leftJudge(end){
+//return;
+	if(end==0){
+		$("#goLeftpannel").hide();
+	}else{
+		$("#goLeftpannel").show();
+	}
+}
+function rightJudge(end){
+//return;
+		var wid=Swidth;
+		var totalWid=wid-end;
+		var liwidth=$(".promptu-menu li").width();
+		if(totalWid>=(liwidth-5)){
+			$("#goRightpannel").hide();
+		}else{
+			$("#goRightpannel").show();
+		}	
+}
+
+
+  	
+       
+function firstJudge(){
+//return;
+/*
+	var liwidth=$(".promptu-menu li").width();
+
+	var showWid=Swidth-30;
+	if(liwidth>showWid){
+	$("#goRightpannel").show();
+	}else{
+	$("#goRightpannel").hide();
+	}
+	*/
+}
+ var shareWexnIcon="http://qingk.cn/pageimages/801487/1407463245971.png";
+ if(shareWexnIcon==null||shareWexnIcon==""||shareWexnIcon=="null"||shareWexnIcon=="img/linklogow.png"){
+ shareWexnIcon="http://zhjn.qingk.cn:80/img/linklogow.png";
+ }
+ 
+		//微信
+		document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+		
+        // 分享到朋友圈
+        WeixinJSBridge.on('menu:share:timeline', function(argv){
+        //alert("in");
+       
+            shareTimeline();
+            });
+ 		  WeixinJSBridge.on('menu:share:appmessage', function(argv){
+            shareFriend();
+            });
+        }, false);
+    
+        function shareTimeline() {
+        var title="";
+        var cop="801487";
+    
+        var t1='';
+        var t2='';
+        var t3='';
+        var t4='昆仑视屏-油田新闻';
+        if(cop=="0"){
+        title="轻快";
+        }else if(t1!=null&&t1!=""&&t1!="null"){
+        title=t1;
+        }else if(t2!=null&&t2!=""&&t2!="null"){
+        title=t2;
+        }else  if(t3!=null&&t3!=""&&t3!="null"){
+        title=t3;
+        }else {
+        title=t4;
+        }
+    
+    
+    	WeixinJSBridge.invoke('shareTimeline',{
+                            "img_url":shareWexnIcon,
+                            "img_width": "60",
+                            "img_height": "60",
+                            "link": window.location.href,
+                            "desc":"",
+                            "title": title
+                         
+                            }, function(res) {
+                              
+                            _report('timeline', res.err_msg);
+                            });
+}
+
+function shareFriend() {
+		
+	    var value=document.getElementById("cont")==null?"":document.getElementById("cont").innerHTML; 
+  		var title="";
+        var cop="801487";
+     
+        var t1='';
+        var t2='';
+        var t3='';
+        var t4='昆仑视屏-油田新闻';
+     
+        if(cop=="0"){
+       
+        title="轻快";
+        }else if(t1!=null&&t1!=""&&t1!="null"){
+         
+        title=t1;
+        }else if(t2!=null&&t2!=""&&t2!="null"){
+         
+        title=t2;
+        }else  if(t3!=null&&t3!=""&&t3!="null"){
+         
+        title=t3;
+        value=$("#contentLine").html();
+        
+        }else {
+         
+        title=t4;
+        }
+      
+        
+       	if(value!=null){
+   		 value=value.replace(/(^\s*)/, "")
+   		 value=value.replace(/\r\n/g,"")  
+       	 value=value.replace(/\n/g,"");  
+   		 value=value.replace(/<\/?.+?>/g,""); 
+   		 value=value.replace(/\&nbsp;/g," "); 
+    	}else{
+    	 value="";
+    	}
+    	if(value.length>100){
+    	value=value.substring(0,100)+"...";
+    	}
+    	
+        
+    WeixinJSBridge.invoke('sendAppMessage',{
+                            "appid": "",
+                            "img_url": shareWexnIcon,
+                            "img_width": "60",
+                            "img_height": "60",
+                            "link":window.location.href,
+                            "desc": value,
+                            "title":title
+                            }, function(res) {
+                            _report('send_msg', res.err_msg);
+                            })
+}
+function goqingk(){
+	/*var path=ppqilu.BASEPATH;
+	if(path==null||path==""){
+		path="http://www.qingk.cn";
+	}*/
+	window.location.href="http://qingk.cn";
+	//window.location.href="http://qktest.cn";
+}
+
+//主屏幕 qingk快捷方式
+function addShourtCutsIphone(){
+
+var isIDevice = (/iphone|ipad/gi).test(navigator.appVersion); // IOS手机
+	if (isIDevice) {
+		var safari = null;
+		var ua = navigator.userAgent.toLowerCase();
+		if (ua.match(/version\/([\d.]+)/) != null) {
+			window.openDatabase ? safari = ua.match(/version\/([\d.]+)/)[1] : 0;
+			if (safari != 0) {
+	
+				if (null == window.sessionStorage.getItem('showIphoneQingK')) {
+					window.sessionStorage.setItem('showIphoneQingK',1);
+					$("#shortcutimage").css("background-image","url('img/shortcuts-apple.png')");
+					$("#shortcuts-iph").show();
+					setTimeout(function(){
+					shutCutsCloseiph();
+					},30000);
+				}
+			}
+		}
+	}else{
+	return;
+	
+	}
+}
+//微信主屏幕提示 
+	
+	function weixinisshow(flag){
+	if(flag==null){
+	flag="";
+	}
+	if(is_weixn()){
+	
+	var elem=document.getElementById("weixintishD");
+	
+	if(elem!=null){
+	
+		var isIDevice = (/iphone|ipad/gi).test(navigator.appVersion); // IOS手机
+		if(isIDevice){
+		elem.getElementsByTagName("img")[0].src="img/weixintishi_ios.png";
+		}
+		
+		var copId="801487";
+		var sessid=copId+"_weixin_"+flag;
+			if(window.sessionStorage.getItem(sessid)==null){
+					elem.style.display="";
+			}
+		}
+		}	
+	}
+	function weixinclose(flag){
+		if(flag==null){
+		flag="";
+		}
+		var elem=document.getElementById("weixintishD");
+			if(elem!=null){
+				var copId="801487";
+				var sessid=copId+"_weixin_"+flag;
+				window.sessionStorage.setItem(sessid,1);
+				elem.style.display="none";
+			}
+	}
+
+
+
+	function brow(){
+	var NV = {};
+	var UA = navigator.userAgent.toLowerCase();
+	NV.name=!-[1,]?'ie':
+    (UA.indexOf("firefox")>0)?'firefox':
+    (UA.indexOf("chrome")>0)?'chrome':
+    window.opera?'opera':
+    window.openDatabase?'safari':
+    'unkonw';
+	
+    NV.shell=(UA.indexOf('360')>-1)?'360浏览器':
+    (UA.indexOf('sogou')>-1)?'搜狗浏览器':
+    (UA.indexOf('maxthon')>-1)?'遨游浏览器':
+    (UA.indexOf('mqqbrowser')>-1)?'QQ浏览器':
+    (UA.indexOf('baidu')>-1)?'百度浏览器':
+    (UA.indexOf('ucbrowser')>-1)?'UC浏览器':
+    '未知或无壳';
+if(NV.shell=="搜狗浏览器"){
+	//alert("搜狗：首先点击菜单栏旁的收藏按钮选择添加到首屏，然后在首页长按书签往上拖动至发送至桌面。");
+	return "sougou";
+}else if(NV.shell=="遨游浏览器"){
+	//alert("遨游：点击底部菜单的收藏按钮，选择添加到桌面。");
+	return "aoyou";
+}else if(NV.shell=="百度浏览器"){
+	//alert("百度：首先点击菜单栏旁的收藏按钮选择添加到首页。然后在首页长按图标添加到桌面。");
+	return "baidu";
+}else if(NV.shell=="UC浏览器"){
+	//alert("UC：点击菜单栏旁的收藏按钮选择发送到桌面。");
+	return "uc";
+}else if(NV.shell=="QQ浏览器"){
+	//alert("QQ：首先点击功能键选择添加书签到主页书签，然后在首页长按书签往上拖动至添加至桌面。");
+	return "qq";
+}else if(NV.shell=="360浏览器"){
+	//alert("360：点击菜单栏旁的收藏按钮选择发至桌面。");
+	return "360";
+}else return "no";
+}
+//iphone主屏幕 company
+function addShourtCutsIphoneCop(copid){
+
+if(is_weixn()){
+
+
+return;
+}	
+
+var isIDevice = (/iphone|ipad/gi).test(navigator.appVersion); // IOS手机
+
+	if (isIDevice) {
+		var safari = null;
+		var ua = navigator.userAgent.toLowerCase();
+		if (ua.match(/version\/([\d.]+)/) != null) {
+			window.openDatabase ? safari = ua.match(/version\/([\d.]+)/)[1] : 0;
+			if (safari != 0) {
+	
+				if (null == window.sessionStorage.getItem('showIphoneQingK-'+copid)) {
+					window.sessionStorage.setItem('showIphoneQingK-'+copid,1);
+					$("#shortcuts-iph").show();
+					setTimeout(function(){
+					shutCutsCloseiph();
+					},30000);
+				}
+			}
+		}
+	}else{
+
+		//return;//暂时屏蔽
+		
+		if (null == window.sessionStorage.getItem('showShortcutQingK-'+copid)){
+		
+		
+		$("#shortCutMes").show();
+	
+		}
+		
+		
+		return;
+		var returnValue=brow();
+		/*
+		if(returnValue!="no"){
+				if (null == window.sessionStorage.getItem('showShortcutQingK-'+copid)) {
+					window.sessionStorage.setItem('showShortcutQingK-'+copid,1);
+					$("#shortcutimage").css("background-image","url('img/shortcuts-"+returnValue+".png')");
+					$("#shortcuts-iph").css("height","85px");
+					if(returnValue=="aoyou"){
+					$("#shortcuts-iph").css("height","120px");
+					}
+					$("#shortcuts-iph").show();
+					setTimeout(function(){
+					shutCutsCloseiph();
+					},20000);
+				}
+		}
+		*/
+	}
+}
+
+function shutCutsCloseiph(){
+$("#shortcuts-iph").hide();
+}
+
+
+
+//滚动特效 
+var windowtop=0;
+//setTimeout("huadong()",2000);
+function huadong(){
+ if(windowtop<($(window).height())){
+ 	windowtop=windowtop+5;
+ 	$("#shortCuts").css("top",windowtop+"px");
+ 	setTimeout(function(){
+ 	huadong();
+ 	},10);
+ 		
+ }
+}
+/*
+document.addEventListener('click', function(ev){
+	
+	var obj=ev.target;
+	if(obj.className=="imgLazy"||obj.className=="logobtn"){
+	//obj.style.opacity="0.4";
+	//alert("in");
+		$(obj).css("filter",'progid:DXImageTransform.Microsoft.Light()');
+	}
+});
+*/
+function is_weixn(){
+var ua = navigator.userAgent.toLowerCase();
+if(ua.match(/MicroMessenger/i)=="micromessenger") {
+return true;
+} else {
+return false;
+}
+}
+
+function goPageHome(){
+	
+	var homepageId="";
+	
+	if(homepageId==null||homepageId==""||homepageId=="null"){
+		if(openFlag==0){
+		location.href="app.html";
+		}else{
+		location.href="app.html";
+		return;
+		var loc=window.location.href;
+
+		location.href=loc.substring(0,loc.lastIndexOf("/"));
+		}
+	}else{
+		location.href="edulistorderContent.do?copID=801487&channelID="+homepageId;
+	}
+}
+ var ucFlag=0;
+try{
+ if(navigator.userAgent.indexOf("UCBrowser")!=-1){
+	new $ppqilu_ajax({"cls" : "Serch_test"},function(ajaxObj){
+				 if (ajaxObj.code == ajaxObj.constants.SUCCESS) {
+				 } 
+				 else{
+				 	if(ucFlag==0){
+				  	 alert("为了得到更好的使用体验，UC浏览器用户请在“设置”中的“极速省流”模式中关闭“智能云加速”，并关闭“极速模式”"); 
+					 ucFlag=1;
+					 }
+				 }
+				 
+				 });										
+				 }
+				 }catch(e){
+				 
+				 }
+
+	//获取信息
+	function checkeUserNameIs(){
+		var customerId = window.localStorage.getItem("customerId");
+		var sessionId = window.localStorage.getItem("doAusEnt");
+		if(null==customerId || ""==customerId || undefined==customerId || 
+			null==sessionId || ""==sessionId || undefined==sessionId){
+	   		//用户未登录--清除用户信息
+			window.localStorage.removeItem("save_info");
+			window.localStorage.removeItem("auto_login");
+			window.localStorage.removeItem("loginFlag");
+			window.localStorage.removeItem("customerId");
+			window.localStorage.removeItem("loginName");
+			window.localStorage.removeItem("cusName");
+			window.localStorage.removeItem("doAusEnt");
+			window.localStorage.removeItem("encrypPass");
+		}else{
+			//调用接口获取数据
+		    new $ppqilu_ajax({
+		    	"cls" : "Customer_loginCheck",
+				"tomerIdCheck" : customerId,
+				"sessionId" : sessionId
+			}, function(ajaxObj) {
+		    	if (ajaxObj.code == ajaxObj.constants.SUCCESS) {
+		    		//用户在新信息校验正确
+				}else{
+		    		//清除用户信息
+					window.localStorage.removeItem("save_info");
+					window.localStorage.removeItem("auto_login");
+					window.localStorage.removeItem("loginFlag");
+					window.localStorage.removeItem("customerId");
+					window.localStorage.removeItem("loginName");
+					window.localStorage.removeItem("cusName");
+					window.localStorage.removeItem("doAusEnt");
+					window.localStorage.removeItem("encrypPass");
+					//跳转页面判断
+					window.setTimeout(function() {
+						if(window.location.href.indexOf("cus_")>0){
+							//不作处理
+						}else{
+							//刷新当前页面
+							window.location.reload();
+						}
+					}, 1500);
+				}		
+		    });
+	    };
+	}
+	
+	//用户公共方法--判断登录、登陆
+	function islogin(){
+		var cus=window.localStorage.getItem("customerId");
+		if(cus==null||cus==""||cus=="null"){
+			return false;
+		}else return true;
+	}
+	function nullToLogin(){
+		var cus=window.localStorage.getItem("customerId");
+		if(cus==null||cus==""||cus=="null"){
+			//微信校验
+			if((/micromessenger/gi).test(navigator.appVersion.toLowerCase())){
+				//微信设置
+				var wxDoUrl = window.location.href;
+				window.localStorage.setItem("wxBackUrl",wxDoUrl);
+				var getParamsQk = wxDoUrl.substring(0,wxDoUrl.indexOf("qingk.cn/")+9);
+				var paramUrl = encodeURIComponent(getParamsQk);
+				//跳转页面
+				window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx0c13307e1c35b5ff&redirect_uri=http://qingk.cn/customer_wxParaTwoLo.jsp&response_type=code&scope=snsapi_userinfo&state="+paramUrl+"#wechat_redirect");
+			}else{
+				location.href="cus_login.do";
+			}
+		}
+	}
+	
+	//用户公共方法--判断认证、认证
+	function isAutoMob(){
+		var loginDoFlag = window.localStorage.getItem("loginFlag");
+		var doHaveMob = window.localStorage.getItem("isHaveMob");
+		//第三方登录
+		if("1"==loginDoFlag || "2"==loginDoFlag || "3"==loginDoFlag){
+			//是否认证手机号
+			if("1"==doHaveMob){
+				//认证
+				return true;
+			}else{
+				//未认证
+				return false;
+			}
+		}else{
+			//手机登陆认证
+			return true;
+		}
+	}
+	function zeroToAutoMob(){
+		var loginDoFlag = window.localStorage.getItem("loginFlag");
+		var doHaveMob = window.localStorage.getItem("isHaveMob");
+		var doAutoMobFlag = true;
+		//第三方登录
+		if("1"==loginDoFlag || "2"==loginDoFlag || "3"==loginDoFlag){
+			//是否认证手机号
+			if("1"==doHaveMob){
+				//认证
+				doAutoMobFlag = true;
+			}else{
+				//未认证
+				doAutoMobFlag = false;
+			}
+		}else{
+			//手机登陆认证
+			doAutoMobFlag = true;
+		}
+		
+		//未认证手机--去认证
+		if(!doAutoMobFlag){
+			//保存页面地址
+			//var mobDoUrl = window.location.href;
+			//window.localStorage.setItem("mobBackUrl",mobDoUrl);
+			//跳转页面
+			//window.location.replace(ppqilu.BASEPATH2+'cus_authMo.do');
+			
+			//清除登陆customerId
+			window.localStorage.removeItem("customerId");
+			//微信校验
+			if((/micromessenger/gi).test(navigator.appVersion.toLowerCase())){
+				//微信设置
+				var wxDoUrl = window.location.href;
+				window.localStorage.setItem("wxBackUrl",wxDoUrl);
+				var getParamsQk = wxDoUrl.substring(0,wxDoUrl.indexOf("qingk.cn/")+9);
+				var paramUrl = encodeURIComponent(getParamsQk);
+				//跳转页面
+				window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx0c13307e1c35b5ff&redirect_uri=http://qingk.cn/customer_wxParaTwoLo.jsp&response_type=code&scope=snsapi_userinfo&state="+paramUrl+"#wechat_redirect");
+			}else{
+				location.href="cus_login.do";
+			}
+		}
+	}
+	
+	function judgeIrFixword(content){
+	
+	return "";			
+	}
+	
+	function getElementsByClassName1(clsName,htmltag){   
+    var arr = new Array();   
+    var elems = document.getElementsByTagName(htmltag);  
+    for ( var cls, i = 0; ( elem = elems[i] ); i++ ){  
+    if ( elem.className == clsName ){   
+    arr[arr.length] = elem;  
+    }  
+    }  
+    return arr;  
+}
+
+
+
+
+</script>
+<style type="text/css" id="myskintext">
+.indexbody{
+	background-color: #2C61A3;
+}
+.indextitle{
+	color: #FFFFFF
+}
+.skin{
+	background-color: #4D94C8;color:#FFFFFF;font-family:微软雅黑;width: 100%;
+}
+
+.text{
+	color: #4D94C8;
+}
+.nopagnation{
+	color: #CCCCCC;
+}
+.default{
+	background-color: #4D94C8;color:#FFFFFF;
+}
+.check{
+	background: url("img/anniu.png");
+	width:30px;height:30px;
+	background-size:30px,30px;
+	color: #FFFFFF;
+}
+.checkto{
+	background: url("img/anniu_blue.png");
+	width:30px;height:30px;
+	background-size:30px,30px;
+	color: #FFFFFF;
+}
+.player{
+	background: url("img/player_blue.png");
+	width: 100px;
+	height: 30px;
+	background-size:100px,30px;
+	color: #FFFFFF;
+	font-size: 18px;
+	text-align: center;
+	line-height: 30px;
+	letter-spacing: 2px;
+}
+.loadMore{
+	background: url("img/btbg_blue.png");
+	width: 120px;
+	height: 36px;
+	background-size:120px,36px;
+	display: none;
+	color: #FFFFFF;
+	font-size: 18px;
+	text-align: center;
+	line-height: 34px;
+	letter-spacing: 2px;
+}
+.logobtn{
+	background: url("img/btbg_blue.png");
+	width: 120px;
+	height: 36px;
+	background-size:120px,30px;
+	color: #FFFFFF;
+	font-size: 18px;
+	text-align: center;
+	line-height: 34px;
+	letter-spacing: 2px;
+}
+.logobtn a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.nextpage{
+	background: url("img/next_blue.png");
+	background-size:30px,30px;
+	width: 30px;height: 30px;
+}
+.prepage{
+	background: url("img/pre_blue.png");
+	background-size:30px,30px;
+	width: 30px;height: 30px;
+}
+.pannel{
+background-color: #4D94C8;
+}
+.pannelA{
+background-color: #2C75AA;
+}
+.pagination li a {
+background-image: url("img/pagination_blue.png");
+}
+.sort{
+background-color: #2C75AA;
+}
+
+</style>
+<script type="text/javascript">
+
+//qingkWindow.src="http://qingk.cn/storage.jsp?name=123";
+//qingkWindow.localStorage.setItem("qingkusername","123");
+
+
+</script>
+	<script type="text/javascript">
+	var isDis="display:block";
+		if(isDis.indexOf("none")!=-1){
+					loadingShow=function(){}
+		}
+		
+	
+</script>
+	
+		<div id="page">
+			<div>
+				<table class="title skin">
+					<tbody><tr>
+						<td style="width: 20%;" class="titleTdleft">
+							<img src="images/ico/back.png" onclick="goPageHome()" class="titleImgleft">
+						</td>
+						<td style="width: 60%;">
+							昆仑视屏-学习榜样
+						</td>
+						<td style="width: 20%" class="titleTdRight">
+							<img src="images/ico/home.png" onclick="goPageHome()" class="titleImgRight">
+						</td>
+					</tr>
+				</tbody></table>
+				
+			</div>
+			<div style="float: left;width: 15px;height:38px;margin-right: -15px;display: none;" id="goLeftpannel">
+				<img src="images/ico/jt2.png" style="padding-top: 10px;">
+			</div>		
+			
+			
+			
+			<div style="background-color:#f6f6f6; height:35px;display:block;border-bottom:1px solid #e2e2e2;" id="sort">
+			
+			<div style="line-height: 35px;margin-left: 0px;float: left; " class="sortWi" id="classifiedContent">
+				<div style="float: left;margin-left: 10px;" id="test-0">
+				<a style="padding-left: 4px;padding-right:3px;text-decoration: none;" class="text" dataid="0" onclick="cho(0)">
+				华油榜样</a>
+				<div style="height: 21px; border-radius: 5px; margin-top: -29px; border: 1px solid rgb(77, 148, 200);" id="btborder-0"></div>
+				</div>
+				
+				
+				<div style="float: left;margin-left: 10px;" id="test-1">
+				<a style="padding-left: 4px;padding-right:3px;text-decoration: none;" class="def0" dataid="1" onclick="cho(1)">
+				劳模先进</a>
+				<div style="height: 21px;border-radius: 5px;margin-top:-29px;border:1px solid transparent" id="btborder-1"></div>
+				</div>
+			
+				<div style="float: left;margin-left: 10px;" id="test-2">
+				<a style="padding-left: 4px;padding-right:3px;text-decoration: none;" class="def0" dataid="2" onclick="cho(2)">
+				最美通信人</a>
+				<div style="height: 21px;border-radius: 5px;margin-top:-29px;border:1px solid transparent" id="btborder-2"></div>
+				</div>
+			
+				<div style="float: left;margin-left: 10px;" id="test-3">
+				<a style="padding-left: 4px;padding-right:3px;text-decoration: none;" class="def0" dataid="3" onclick="cho(3)">
+				先进宣传</a>
+				<div style="height: 21px;border-radius: 5px;margin-top:-29px;border:1px solid transparent" id="btborder-3"></div>
+				</div>
+			
+			</div>
+			<div style="float: right;height: 35px;line-height: 35px;margin-right:4px;display: none;" onclick="gupordown()" id="upordownDiv">
+			<img src="images/ico/icon_xiangxia.png" style="display: block;width: 18px;margin-left: 0px;margin-top: 10px;height: 17px;" id="upordown">
+			</div>
+						
+			</div>
+			
+			
+			<div id="list1" style="margin-top:25px;">
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:15px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:center;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang1.jpg" style="width:155px;height:120px;vertical-align: middle;margin-top:3px;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">	
+								<div style="text-align:center;">张三</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:5px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang2.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">李四</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+					<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:15px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang3.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">王五</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+					<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:5px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang4.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">赵六</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:15px;">
+					<tbody>
+						<tr style="">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang4.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">赵七</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:5px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang5.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">钱八</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+		
+			</div>
+			
+			
+			
+			<div id="list2" style="margin-top:25px;">
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:15px;">
+					<tbody>
+						<tr style="">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang10.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">张三2</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:5px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang2.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">李四2</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:15px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang11.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">王六2</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:5px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang12.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">赵七2</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:15px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang13.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">钱八2</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:5px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang14.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">孙九2</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			
+			
+			<div id="list3" style="margin-top:25px;">
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:15px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang15.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">张三3</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:5px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang16.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">李四3</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:15px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang17.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">王六3</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:5px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang18.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">赵七3</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:15px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang19.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">钱八3</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:5px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang20.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">孙九3</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			
+			<div id="list4" style="margin-top:25px;">
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:15px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang1.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">张三4</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:5px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang3.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">李四4</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:15px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang5.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">王六4</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:5px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang7.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">赵七4</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:15px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang9.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">钱八4</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="" onclick="location.href='app_bangyang_detail.html'" style="float:left;margin-left:5px;">
+					<tbody>
+						<tr style="border:1px solid #E8E8E8;">
+							<td style="width:155px;text-align:right;">
+								<div style="width:155px;height:120px;border-radius:5px;">
+								<img src="images/app_bangyang/app_bangyang11.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td style="font-size:18px;border:1px solid #E8E8E8">
+								<div style="text-align:center;">孙九4</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+		
+			</div>
+
+			<script type="text/javascript">
+				
+				var tabs;
+				var temp = '';
+				var list1 = document.getElementById("list1");
+				var paramUrl = location.search;
+				var param = paramUrl.split("=");
+				//alert(param[1]);
+				var dongt = eval(dongt);
+				//alert(co[0].content);
+				
+				function cho(sortid){
+					if(sortid=="0"){
+						document.getElementById("list1").style.display="";
+						document.getElementById("list2").style.display="none";
+						document.getElementById("list3").style.display="none";
+						document.getElementById("list4").style.display="none";
+					}
+					else if(sortid=="1"){
+						document.getElementById("list1").style.display="none";
+						document.getElementById("list2").style.display="";
+						document.getElementById("list3").style.display="none";
+						document.getElementById("list4").style.display="none";
+					}
+					else if(sortid=="2"){
+						document.getElementById("list1").style.display="none";
+						document.getElementById("list2").style.display="none";
+						document.getElementById("list3").style.display="";
+						document.getElementById("list4").style.display="none";
+					}
+					else{
+						document.getElementById("list1").style.display="none";
+						document.getElementById("list2").style.display="none";
+						document.getElementById("list3").style.display="none";
+						document.getElementById("list4").style.display="";
+					}
+					var colors = splitColors(myskintext.innerHTML);
+					window.sessionStorage.setItem("channelsortId_12517",sortid);
+					//document.getElementById("btborder-"+sortid).className="skin";
+					document.getElementById("test-"+sortid).getElementsByTagName("a")[0].className ="text";
+					document.getElementById("test-"+sortid).getElementsByTagName("div")[0].style.border =" 1px solid " + colors;
+					
+					if(s_id!=sortid){
+						if(s_id!=null){      	
+						//document.getElementById("btborder-"+s_id).className="";
+							if(document.getElementById("test-"+s_id)!=null){
+								document.getElementById("test-"+s_id).className="";
+								document.getElementById("test-"+s_id).getElementsByTagName("a")[0].className="def0";
+								document.getElementById("test-"+s_id).getElementsByTagName("div")[0].style.borderColor="transparent";
+								document.getElementById("test-"+sortid).getElementsByTagName("a")[0].className="text";
+								document.getElementById("test-"+sortid).getElementsByTagName("div")[0].style.borderColor=colors;
+							}
+						}
+						/**for(i=0;i<dongt.length;i++){
+					
+						var urls = 'app_news_detail.html?cx='+ i;
+						tabs = '<table class="tb2" onclick="location.href='+"'"+ urls +"'"+'">'+
+									'<tbody>'+
+									'<tr style="">'+
+										'<td style="width:155px;text-align:right;border-bottom:1px solid #E8E8E8;">'+
+											'<div style="width:155px;height:120px;border-radius:5px;margin-left:5px;margin-top:10px;margin-bottom:12px;">'+
+											'<img src="images/app_news/'+ i+'.jpg" style="width:155px;height:120px;vertical-align: middle;display:block;border-radius:4px;" class="">'+
+											'</div>'+
+										'</td>'+
+										'<td style="padding:0 13px 0 20px;color:#000000;font-size:18px;border-bottom:1px solid #E8E8E8">'+
+											'<div class="row" style="font-weight:normal;">'+ dongt[i].title+'</div>'+
+										'</td>'+
+									'</tr>'+
+									'</tbody>'+
+								'</table>';
+
+						temp = temp+tabs;
+						}
+
+						list1.innerHTML = temp;	**/						
+						s_id = sortid;
+						app(sortid);
+					}
+					
+				}
+				
+				function ckCbo()
+				{	
+					document.getElementById("list1").style.display="";
+					document.getElementById("list2").style.display="none";
+					document.getElementById("list3").style.display="none";
+					document.getElementById("list4").style.display="none";
+					
+					var colors = splitColors(myskintext.innerHTML);
+					document.getElementById("test-0").getElementsByTagName("a")[0].className ="text";
+					document.getElementById("test-0").getElementsByTagName("div")[0].style.border =" 1px solid " + colors;
+					
+				
+					if(document.getElementById("test-0")!=null){
+						document.getElementById("test-0").className="";
+						document.getElementById("test-0").getElementsByTagName("a")[0].className="def0";
+						document.getElementById("test-0").getElementsByTagName("div")[0].style.borderColor="transparent";
+						document.getElementById("test-0").getElementsByTagName("a")[0].className="text";
+						document.getElementById("test-0").getElementsByTagName("div")[0].style.borderColor=colors;
+					}
+					app(0);
+					
+					
+				}
+				
+			</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<center>
+ 			
+ 			<div style="width: 100%; display: block;" id="loadMore" onclick="loadMore()">
+			<table cellspacing="0" cellpadding="0" style="width: 100%;height: 45px; margin-top:15px;">
+			<tbody><tr>
+				<td width="10"></td>
+				<td><div style="height: 45px;line-height: 45px;text-align: center; border-radius: 6px;background-color: #E3E7E8;font-size:16px;color:#575757;">点击查看更多</div></td>
+				<td width="10"></td>
+			</tr>
+			</tbody></table>
+			
+			</div>
+	 			 
+ 			 
+ 			 
+ 			 
+ 			 
+ 			 </center>
+ 		<div style="height: 15px;width: 100%;"></div>	 
+		 
+		 <div style="width: 100%;"><div class="ktimg">
+		<img src="images/ico/ktohome.png" onclick="goqingk()">
+		</div>
+		</div>
+	
+	</div>
+		
+		
+
+
+<div id="searchBot" style="position:fixed; top:0px; left:0px; z-index:2000; background-color:rgba(0, 0, 0, 0.7); width:100%; height:100%; display:none;" onclick="javascript:doInputBlur();">
+	<div style="width:100%; height:320px; position:absolute; bottom:0px;" class="indexbody"></div>
+</div>
+<center id="footCent" class="indexbody fullWidth" style="z-index:2001;margin: 0 auto;">
+	<div style="background-color:#E3E7E8;" class="footerpage " id="thisisfooter">
+		<div id="loginIng" class="footerpage" style="height: 35px; line-height: 35px; text-align: left; margin-bottom: 0px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(200, 200, 200); display: block;" onclick="javascript:doInputBlur();">
+			<div style="height:100%; margin-left:15px; float:left;" onclick="goTodo(1)">
+				<img src="images/ico/littleman.png" style="width:20px; vertical-align:middle;">
+			</div>
+			<div style="float:left; margin-left:5px;" onclick="goTodo(1)">登录</div>
+			<div style="height:100%; margin-left:24px; float:left;" onclick="goTodo(1)">
+				<img src="images/ico/littlebook.png" style="width:20px; vertical-align:middle; margin-bottom:4px;">
+			</div>
+			<div style="float:left; margin-left:5px;" onclick="goTodo(2)">注册</div>
+			
+			<div id="toHomePaFo" style="display:inline-block; float:right; margin-right:10px;margin-top: -2px;" onclick="goqingk()">
+				<img style="width:16px; vertical-align:middle;" src="images/ico/ktohome.png">
+			</div>
+			
+			<div id="toSearPaFo" style="display:none; float:right; margin-right:15px;margin-top: 2px;" onclick="javascript:searchDiv();">
+				<img id="vewImg" src="images/ico/rukou_sousuo.png" style="width:18px; vertical-align:middle; margin-bottom:4px;">
+			</div>
+			
+		</div>
+		
+		<div id="loginNor" class="footerpage" style="height: 35px; line-height: 35px; text-align: left; margin-bottom: 0px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(200, 200, 200); display: none;" onclick="javascript:doInputBlur();">
+					
+			<div style="display:inline-block; margin-left:20px;float: left;">欢迎:</div>
+	
+			<div id="customerName" style=" margin-left:14px; font-family:&#39;Helvetica&#39;,&#39;Arial&#39;,&#39;黑体&#39;; font-size:15px; float: left;" onclick="javascript:doHome();"></div>
+		
+			<div style="width: 36px;height:16px;border-radius: 7px;color: #FFFFFF;font-size: 12px;
+			text-align: center;float: left;line-height:16px;margin-top:2px;
+			margin-left:2px;display:none " onclick="javascript:doHome();" id="_dingyuecountshow1">
+			<div style="float: left;margin-left:6px;margin-top:3px;"><img src="images/ico/dingyuexiao.png" style="width: 9px;display: block;"></div>
+			<div style="float: left;font-size: 12px;font-weight: bold;color: #ffffff;margin-left: 2px;" id="_dingyuecountshow2"></div>
+			</div>
+			
+			
+			
+			<div id="toHomePaFoNor" style="display:inline-block; float:right; margin-right:10px;margin-top: -2px;" onclick="goqingk()">
+			
+				<img style="width:16px; vertical-align:middle;" src="images/ico/ktohome.png">
+			</div>
+			
+			<div id="toSearPaFoNor" style="display:none; float:right; margin-right:15px;" onclick="javascript:searchDiv();">
+				<img id="vewImg" style="width:18px; vertical-align:middle;" src="images/ico/rukou_sousuo.png">
+			</div>
+		</div>
+		
+		<div id="searchArea" style="display:none; margin:4px 0px 9px;" class="footerpage">
+			<table style="width:100%; height:35px; line-height:35px; table-layout:fixed; word-wrap:break-word; border-collapse:separate; border-spacing:0;">
+				<tbody><tr>
+					<td style="width:10px;"></td>
+					<td style="background-color:rgba(255, 255, 255, 0.3);">
+						<input id="searchContent" style="width:100%; height:100%; border:0px; background-color:rgba(255, 255, 255, 0);" type="text" placeholder="站内搜" onfocus="javascript:doInputFocus();">
+					</td>
+					<td style="width:55px; background-color:rgba(255, 255, 255, 0.3);" onclick="javascript:doSearch();">
+						<span style="padding-left:10px; border-left:1px solid #000000; font-size:15px; color:#000000;">搜索</span>
+					</td>
+					<td style="width:10px;"></td>
+				</tr>
+			</tbody></table>
+		</div>
+		
+		<div style="height:1px; background-color:#dedede;" class="footerpage" id="deborder"></div>
+		
+		<div id="uiHeight" style="height:6px;" class="footerpage"></div>
+		
+		<div style="height:20px; margin-top:4px;" class="footerpage" onclick="javascript:doInputBlur();">
+			<table style="width:100%; height:20px; line-height:20px; table-layout:fixed; word-wrap:break-word; border-collapse:separate; border-spacing:0;">
+				<tbody><tr>
+					<td style="width:13px;"></td>
+					<td style="width:20px;">
+						<a href="http://zhjn.qingk.cn/introduce.do?copID=801487"><img style="width:20px; vertical-align:bottom;" src="images/ico/rukou_erweima.png"></a>
+					</td>
+					<td style="width:7px;"></td>
+					<td style="text-align:right;">
+						<a href="http://zhjn.qingk.cn/"><span id="domain" style="float:left; height:20px; line-height:20px; font-family:&#39;Helvetica&#39;,&#39;Arial&#39;,&#39;黑体&#39;; font-size:13px; color:#000000;">cnpchtxl.com</span></a>
+						<a href="http://k.qingk.cn/" style="text-decoration:none;"><span style="height:20px; line-height:20px; font-size:13px; color:#000000;">昆仑视屏小秘书</span></a>
+						<span style="margin-left:6px; height:20px; line-height:20px; font-size:13px; color:#000000;" onclick="javascript:window.location.href=&#39;http://admin.qingk.cn/&#39;">管理中心</span>
+					</td>
+					<td style="width:10px;"></td>
+				</tr>
+			</tbody></table>
+		</div>
+		<div style="height:14px; line-height:14px; margin:14px 0px 15px;" class="footerpage" onclick="javascript:doInputBlur();">
+			<div style="font-size:12px; color:#a2a2a2;padding-top:2px;padding-bottom:2px;" id="qingkApptext">
+				©华通信联APP版权所有
+				 
+				
+			</div>	
+		</div>
+		
+		<div style="display:none;">
+			<div style="font-size: 13px;text-align: center;height: 25px;line-height: 25px;" class="footerpage">
+				本站网址 - <a style="text-decoration: none;font-size: 13px;font-family:&#39;Helvetica&#39;,&#39;Arial&#39;,&#39;黑体&#39;;" href="http://zhjn.qingk.cn/">zhjn.qingk.cn</a>
+				<a style="text-decoration: none;font-size: 13px;padding-left: 2px;" href="http://admin.qingk.cn/">管理中心 </a>
+			</div>
+		
+			<div style="font-size: 13px;text-align: center;height: 25px;line-height: 25px;margin-left: -16px;" class="footerpage">
+				©2016 <a style="text-decoration: none;font-size: 13px;" href="javaScript:goPageHome();">昆仑视屏</a><span style="height: 10px;font-size: 13px;padding-top: 10px;line-height: 25px;vertical-align: top;">&nbsp;|&nbsp;</span>技术支持：<a style="text-decoration: none;font-size: 13px;" href="http://k.qingk.cn/">轻快</a>
+			</div>
+			
+			
+			<div class="footerpage" style="height: 25px;margin-top: -28px;">
+				<a href="http://zhjn.qingk.cn/introduce.do?copID=801487" style="text-decoration: none;">
+					<img src="images/ico/erweima.png" style="width: 24px;height: 24px;float: right;margin-right: 4px;">
+				</a>
+			</div>
+		</div>
+		
+	
+	</div>
+</center>
+<script type="text/javascript">
+	window.localStorage.setItem("loginUrl",window.location.href);
+	
+	//UI规范调整
+	document.getElementById("searchArea").style.display = "none";
+	
+	function goTodo(num){
+		if(num==1){
+			//规范UI
+			document.getElementById("searchBot").style.display = "none";
+			$("#footCent").css("position","static");
+			$("#footCent").css("bottom","0px");
+			//页面跳转
+			doLogAut();
+		}else{
+			//规范UI
+			document.getElementById("searchBot").style.display = "none";
+			$("#footCent").css("position","static");
+			$("#footCent").css("bottom","0px");
+			//页面跳转
+			location.href=ppqilu.BASEPATH2+"cus_register.do";
+		}
+	}
+	
+	//设置微信登录
+	function doLogAut(){
+		//微信校验
+		if((/micromessenger/gi).test(navigator.appVersion.toLowerCase())){
+			//微信设置
+			var wxDoUrl = window.location.href;
+			window.localStorage.setItem("wxBackUrl",wxDoUrl);
+			window.localStorage.setItem("getBeforeUrl",wxDoUrl);
+			var getParamsQk = wxDoUrl.substring(0,wxDoUrl.indexOf("qingk.cn/")+9);
+			var paramUrl = encodeURIComponent(getParamsQk);
+			//跳转页面
+			window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx0c13307e1c35b5ff&redirect_uri=http://qingk.cn/customer_wxParaTwoLo.jsp&response_type=code&scope=snsapi_userinfo&state="+paramUrl+"#wechat_redirect");
+		}else{
+			location.href=ppqilu.BASEPATH2+"cus_login.do";
+		}
+	}
+	
+	//用户信息
+	var customerId="";
+	var cusName="";
+	var loginName="";
+	window.setTimeout(function() {
+		customerId = window.localStorage.getItem("customerId");
+		cusName = window.localStorage.getItem("cusName");
+		loginName = window.localStorage.getItem("loginName");
+		
+		//判断
+		if(""==customerId || null==customerId || undefined==customerId){
+			document.getElementById("loginIng").style.display = "block";
+			document.getElementById("loginNor").style.display = "none";
+		}else{
+			document.getElementById("loginIng").style.display = "none";
+			document.getElementById("loginNor").style.display = "block";
+			//$("#customerName").html(cusName||loginName);
+			//跨域请求会存在数据流失，在次调用接口获取
+			//调用接口获取数据
+			new $ppqilu_ajax({
+				"cls" : "Customer_userInfo",
+				"customerId" : customerId
+			}, function(ajaxObj){
+					if(ajaxObj.objs==null||""==ajaxObj.objs||ajaxObj.objs.length==0){
+					try{
+					setCookie("customerId","",-1);
+					window.localStorage.removeItem("customerId");
+					}catch(e){
+					}
+				}
+					
+				if (ajaxObj.code == ajaxObj.constants.SUCCESS) {
+					var objs = ajaxObj.objs;
+					var isHaveMob = "";
+					var doBindMob = "";
+					var getCustomerId = "";
+					var loginName = "";
+					var customerName = "";
+					var loginFlag = "";
+					var sessionId = "";
+					var encrypPassword = "";
+					for(var i=0;i<objs.length;i++){
+						var object=objs[i];
+						isHaveMob = object.get("isHaveMob");
+						doBindMob = object.get("doBindMob");
+						getCustomerId = object.get("customerId");
+						loginName = object.get("loginName");
+						customerName = object.get("customerName");
+						loginFlag = object.get("loginFlag");
+					    sessionId = object.get("sessionId");
+						encrypPassword = object.get("encrypPassword");
+					}
+
+					//判断
+					if("1"==isHaveMob){
+						//customerId不为空，为登录成功
+						if (customerId == getCustomerId) {
+							//是否保存信息的标记，1表示保存。用于进入登录页面时，拿到信息放到输入框中
+							window.localStorage.setItem("save_info", "1");
+							//保存用户信息 自动登录
+							window.localStorage.setItem("auto_login", "1");
+							//用户id
+							window.localStorage.setItem("customerId", customerId);
+							//登录名称
+							window.localStorage.setItem("loginName", loginName);
+							//用户昵称
+							window.localStorage.setItem("cusName", customerName);
+							//认证用户信息
+							window.localStorage.setItem("loginFlag", loginFlag);
+							//toid
+							window.localStorage.setItem("doAusEnt", sessionId);
+							//mmPI
+							//window.localStorage.setItem("encrypPass", encrypPassword);
+							
+							//认证手机
+							window.localStorage.setItem("isHaveMob", isHaveMob);
+							//绑定的手机号
+							window.localStorage.setItem("doBindMob", doBindMob);
+							
+							//底部赋值
+							$("#customerName").html(customerName||loginName);
+						
+								if(customerId!=null&&customerId!=""){
+									
+								/* 	new $ppqilu_ajax({
+									"cls" : "UserCenter_myordersCount"},function(aj){
+									var cu=parseInt(aj.thecount);	
+									if(cu>=99){
+										_dingyuecountshow2.innerHTML=99;
+									}else{
+										_dingyuecountshow2.innerHTML=cu;
+									}
+									
+									if(cu==0){
+									_dingyuecountshow1.style.display="none";
+									}else{
+									_dingyuecountshow1.style.display="";
+									_dingyuecountshow1.style.backgroundColor="#FF2222";	
+									
+									}
+								}); */
+							}
+						}else{
+							document.getElementById("loginIng").style.display = "block";
+							document.getElementById("loginNor").style.display = "none";
+							window.localStorage.removeItem("customerId");
+						}
+					}else{
+						document.getElementById("loginIng").style.display = "block";
+						document.getElementById("loginNor").style.display = "none";
+						window.localStorage.removeItem("customerId");
+					}
+	  	  		}else{
+					document.getElementById("loginIng").style.display = "block";
+					document.getElementById("loginNor").style.display = "none";
+					window.localStorage.removeItem("customerId");
+				}
+			});
+		};
+	}, 500);
+	
+	
+	//跳转个人中心
+	function doHome(){
+		//规范UI
+		document.getElementById("searchBot").style.display = "none";
+		$("#footCent").css("position","static");
+		$("#footCent").css("bottom","0px");
+		//页面跳转
+		window.location.href = ppqilu.BASEPATH2+'cus_home.do?cusId='+customerId;
+	};
+	
+	//显示搜索区域
+	function searchDiv(){
+		var vewFlay = document.getElementById("searchArea").style.display;
+ 		if ("none"==vewFlay){
+			document.getElementById("searchArea").style.display = "block";
+		} else {
+			document.getElementById("searchArea").style.display = "none";
+			document.getElementById("searchBot").style.display = "none";
+			$("#footCent").css("position","static");
+			$("#footCent").css("bottom","0px");
+		}
+	};
+	
+	//搜索处理
+	function doSearch(){
+		var nowSearchUrl = window.location.href;
+		var getUrlCopId = "";
+		var paraString = nowSearchUrl.substring(nowSearchUrl.indexOf("?")+1,nowSearchUrl.length).split("&"); 
+		for (i=0; j=paraString[i]; i++){ 
+			if("copID"==j.substring(0,j.indexOf("="))){
+				getUrlCopId = j.substring(j.indexOf("=")+1,j.length);
+			}
+		}
+		var searchCont = document.getElementById("searchContent").value;
+		
+		//UI调整
+		document.getElementById("searchBot").style.display = "none";
+		$("#footCent").css("position","static");
+		$("#footCent").css("bottom","0px");
+		
+		//查询数据
+		if (searchCont.replace(/(^\s*)/, "") == "") {
+			Alert("内容不能为空");
+			return;
+		} else {
+			if (searchCont.match(/[<>&%{}()|!=.?%''""]/)||searchCont.indexOf("[")!=-1||searchCont.indexOf("]")!=-1) {
+				Alert("包含非法字符");
+				return;
+			} else {
+				searchCont = encodeURI(encodeURI(searchCont));
+				window.location.href =  "toSearch.do?word="+searchCont+"&copID="+getUrlCopId;
+			}
+		}
+	};
+	
+	//搜索区域获取焦点
+	function doInputFocus(){
+		if((/mobile/gi).test(navigator.appVersion.toLowerCase())){
+			document.getElementById("searchBot").style.display = "block";
+			if (window.orientation == 0 || window.orientation == 180) {
+				//竖屏
+				$("#footCent").css("position","relative");
+				$("#footCent").css("bottom","280px");
+			}else if (window.orientation == 90 || window.orientation == -90) {
+				//横屏
+				$("#footCent").css("position","relative");
+				$("#footCent").css("bottom","180px");
+			}
+		}
+	};
+	
+	
+	//搜索区域失去焦点
+	function doInputBlur(){
+		document.getElementById("searchBot").style.display = "none";
+		$("#footCent").css("position","static");
+		$("#footCent").css("bottom","0px");
+	};
+	 
+	 /*
+	 var elems = document.getElementsByTagName("img");
+	 var refereObj;
+	 for(var aks=0;aks<elems.length;aks++){
+	 if(elems[aks].className=="titleImgleft"){
+	 refereObj=elems[aks];
+	 break;
+	 }
+	
+	 }
+	  
+	 
+	  if(refereObj!=null){
+	  var func=refereObj.onclick;
+	 
+	  
+	  }
+	  
+	  */
+	  if(document.getElementById("share_box_14")!=null){
+			 var ua = navigator.userAgent.toLowerCase();
+			if(ua.match(/MicroMessenger/i)=="micromessenger") {
+			document.getElementById("share_box_14").style.display="none";
+			} 
+	  }
+	  
+	//序号17.设置cookie
+	  function setCookie(key,value,minute) {
+	  	//添加cookie  
+	  	var str = key + "=" + escape(value);
+	  	if (minute > 0) {
+	  		//为时不设定过期时间，浏览器关闭时cookie自动消失  
+	  		var date = new Date();
+	  		var ms = minute * 60 * 1000;
+	  		date.setTime(date.getTime() + ms);
+	  		str += "; expires=" + date.toGMTString();
+	  	}
+	  	document.cookie = str+";path=/;domain=.qingk.cn";
+	  }
+
+</script>
+	
+
+<script>
+	
+upordownShow();
+function gupordown(){
+	
+	if(document.getElementById("sort").style.height=="35px"){
+	upordown.src="images/ico/icon_xiangshang.png";
+	document.getElementById("sort").style.height="";
+	}else{
+	upordown.src="images/ico/icon_xiangxia.png";
+	document.getElementById("sort").style.height="35px";
+	}
+	
+}
+
+function upordownShow(){
+	
+	var eles=$(".def0").objs();
+	var flag=false;
+	if(eles.length>0){
+	var t=eles[0].offsetTop;
+	for(var i=0;i<eles.length;i++){
+	if(eles[i].offsetTop!=t){
+		flag=true;
+		break;
+		}
+	}
+	}
+	if(flag){
+		$("#upordownDiv").show();
+	}else{
+		$("#upordownDiv").hide();
+	}
+}
+
+
+
+var a=0
+
+
+
+	var s_id;
+	var sort;
+	var page;
+	var size;
+	var cunt;
+	var is_bold_title = "0";
+	
+	function app(sortid){
+		sort = sortid;
+		page = 1;
+		cunt = 0;
+		loadingShow();
+		new $ppqilu_ajax({"cls" : "Channel_list", "id" : 12517, "sortid" : sort, "page" : page,"style":"2"},
+			function(ajaxObj){
+				
+				size = ajaxObj.totalCount;
+						
+	    		if (ajaxObj.code == ajaxObj.constants.SUCCESS) {
+	    			var objs=ajaxObj.objs;
+	    			
+	    			switch (2) {
+					    case 1:
+						   t1(objs,0);
+						   $("#list").css("margin-top","0px");
+						  
+						break;
+					    case 2:
+					    	t2(objs,0);
+					    	
+					    break;
+					    case 3:
+					    	t3(objs,0);
+					    	 
+					    break;
+					    case 4:
+					    	t4(objs,0);
+					    	  
+					    break;
+					}
+					setTimeout("loadingDis()",1);			
+	  	  		}else{setTimeout("loadingDis()",1);}
+    	});
+    	var statusSort=document.getElementById("sort").style.display;
+    	if(statusSort=="none"){
+    	
+    	
+    	}else{
+    	
+    	}
+    	
+	}
+	
+	var fontWeight = "normal";
+	if(is_bold_title ==1){
+		fontWeight = "bold";
+	}
+    function t1(objs,flag){
+		
+    	var content = "";
+    	var i = 0;
+    	if(objs.length == 0)
+    			content = "<center><p>该分类下暂无内容</p></center>";
+    	else{
+   			for(var k=0;k<objs.length;k++){
+    			var object=objs[k];
+    			cunt+=1;
+		    	var contentId = object.get("contentId");
+		    	var title = object.get("title");
+		    	var image = object.get("image");
+		    	var islink=object.get("islink");
+		    	var linkurl=object.get("linkurl");
+		    	var date_time=object.get("date_time");
+		    	
+		    	/*
+		    	<div class="text" style="font-size: 16px;text-align: left;line-height: 20px;
+				text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;height: 20px;
+				" onclick="location.href='content.do?id=&copID=801487&channelID=12517&classifiedid='">
+				下一篇： </div>*/
+				
+		    	if(islink=="true"){
+		    		content += "<table class='tb1' onclick=\"window.location.href='"+linkurl+"'\"><tr ><td width='10px'></td><td style='padding-bottom:15px;border-bottom:1px solid #E5E5E5;'  align='left'>"
+		    		+"<div style='color:#000000;font-size:18px;line-height: 24px;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;margin-top:10px;font-weight:"+fontWeight+";' class='titleclass'>"+title+"</div><div style='float:right;font-size:14px;color:#aaaaaa;margin-top:5px;margin-right:10px;'>"+date_time+"</div></td><td style='width:10px;'></td> </tr></table>"
+		    	}else{
+		    		content += "<table class='tb1' onclick=\"goCont('"+contentId+"')\"><tr ><td width='10px'></td><td style='padding-bottom:15px;border-bottom:1px solid #E5E5E5;'  align='left'>"
+		    		+"<div style='color:#000000;font-size:18px;line-height: 24px;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;margin-top:10px;font-weight:"+fontWeight+";' class='titleclass'>"+title+"</div><div style='float:right;font-size:14px;color:#aaaaaa;margin-top:5px;margin-right:10px;'>"+date_time+"</div></td><td style='width:10px;'></td></tr></table>"
+		    	}
+		    	i++;
+    		}
+    	}
+	    if(flag==0)
+	    	$("#list").html(content);
+	    else
+	    	$("#list").html($("#list").html()+content);
+	 	
+	    if(size>cunt){
+    		$("#loadMore").show("block");
+    	}else{
+    		$("#loadMore").hide();
+    	}
+    	//如果频道is_bold_title为1，则加粗标题
+    	if(is_bold_title==1){
+    		$(".titleclass").css("font-weight","bold");
+    	}
+    	
+    }
+    function t2(objs,flag){
+	
+    	var content = "";
+    	var i = 0;
+    	if(objs.length == 0)
+    		content = "<center><p>该分类下暂无内容</p></center>";
+    	else{
+    		for(var k=0;k<objs.length;k++){
+    		    var object=objs[k];
+    			cunt+=1;
+		    	var contentId = object.get("contentId");
+		    	var title = object.get("title");
+		    	var image = object.get("image");
+		    	if(image==""){
+		    	image="1abcgfdgghfgh.png";
+		    	}
+		    	var islink=object.get("islink");
+		    	var linkurl=object.get("linkurl");
+		    	if(islink=="true"){
+		    
+		    	content += "<table class='tb2'	 onclick=\"window.location.href='"+linkurl+"'\"><tr style=''><td style='width:"+(90*widPecent+5)+"px;text-align:right;border-bottom:1px solid #E8E8E8;'><div style='width:"+(90*widPecent+6)+"px;height:"+(60*widPecent+6)+"px;border-radius:5px;margin-left:5px;margin-top:10px;margin-bottom:12px;'><img data-original='"+image+"' src='img/homeless.png' style='width:"+(90*widPecent)+"px;height:"+(60*widPecent)+"px;vertical-align: middle;display:block;border-radius:4px;' class='imgLazy'/></div></td><td style='padding:0 13px 0 20px;color:#000000;font-size:18px;border-bottom:1px solid #E8E8E8'><div class='row' style='font-weight:"+fontWeight+";'>"+title+"</div></td></tr></table>"
+		 	
+		    	}else{
+	    		content += "<table class='tb2' onclick=\"goCont('"+contentId+"')\"><tr style=''><td style='width:"+(90*widPecent+5)+"px;text-align:right;border-bottom:1px solid #E8E8E8;'><div style='width:"+(90*widPecent+6)+"px;height:"+(60*widPecent+6)+"px;border-radius:5px;margin-left:5px;margin-top:10px;margin-bottom:12px;'><img data-original='"+image+"' src='img/homeless.png' style='width:"+(90*widPecent)+"px;height:"+(60*widPecent)+"px;vertical-align: middle;display:block;border-radius:4px;' class='imgLazy'/></div></td><td style='padding:0 13px 0 20px;color:#000000;font-size:18px;border-bottom:1px solid #E8E8E8'><div class='row' style='font-weight:"+fontWeight+";'>"+title+"</div></td></tr></table>"
+		    	}
+		    	i++;
+	    	}
+	    	}
+	    if(flag==0)
+	    	$("#list").html(content);
+	    else
+	    	$("#list").html($("#list").html()+content);
+	    if(size>cunt){
+    		$("#loadMore").show("block");
+    	}else{
+    		$("#loadMore").hide();
+    	}
+    	lazyAll();
+    }
+    function t3(objs,flag){
+
+    	var content = "";
+    	var i = 0;
+    	if(objs.length == 0)
+    		content = "<center><p>该分类下暂无内容</p></center>";
+    	else{
+    		for(var k=0;k<objs.length;k++){
+    			var object=objs[k];
+    		
+    			cunt+=1;
+		    	var contentId = object.get("contentId");
+		    	var title = object.get("title");
+		    	var image = object.get("image");
+		    	
+		    	if(image==""){
+		    	image="1abcgfdgghfgh.png";
+		    	}
+		    	var islink=object.get("islink");
+		    	var linkurl=object.get("linkurl");
+		    	
+		    	if(islink=="true"){
+		    	content += "<div class='dv1'  onclick=\"window.location.href='"+linkurl+"'\"><table style='text-align:center;border-spacing:0' cellspacing='0px' cellpadding='0px'><tr><td ><img  class='imgLazy' data-original='"+image+"' src='img/piclist1.png' style='border:0px solid white;height:"+(Swidth-15)/3.2+"px;width:"+(Swidth-15)/2+"px' /></td></tr></table></div>"
+		    	
+		    	}else{
+		 		content += "<div class='dv1' onclick=\"goCont('"+contentId+"')\"><table style='text-align:center;border-spacing:0' cellspacing='0px' cellpadding='0px'><tr><td ><img  class='imgLazy' data-original='"+image+"' src='img/piclist1.png' style='border:0px solid white;"+(Swidth-15)/3.2+"px;width:"+(Swidth-15)/2+"px' /></td></tr></table></div>"
+		    	}
+		    	i++;
+	    
+	    	}
+	    	}
+	    if(flag==0)
+	    	$("#list").html(content);
+	    else
+	    	$("#list").html($("#list").html()+content);
+	    if(size>cunt){
+    		$("#loadMore").show("block");
+    	}else{
+    		$("#loadMore").hide();
+    	}
+    		lazyAll();
+    }
+    function t4(objs,flag){
+    	var content = "";
+    	var i = 0;
+    	if(objs.length == 0)
+    		content = "<center><p>该分类下暂无内容</p></center>";
+    	else{
+    		for(var k=0;k<objs.length;k++){
+    			var object=objs[k];
+    			cunt+=1;
+		    	var contentId = object.get("contentId");
+		    	var title = object.get("title");
+		    	var image = object.get("image");
+		    	if(image==""){
+		    	image="1abcgfdgghfgh.png";
+		    	}
+		    	var islink=object.get("islink");
+		    	var linkurl=object.get("linkurl");
+		    	if(islink=="true"){
+		    	content += "<div class='dv2' onclick=\"window.location.href='"+linkurl+"'\"><img data-original='"+image+"' src='img/piclist2.png' class='imgLazy'  style='width:100%;height:100%;border:0px solid white;'/></div>"
+		    	
+		    	}else{
+		    	
+		    		content += "<div class='dv2' onclick=\"goCont('"+contentId+"')\"><img data-original='"+image+"' src='img/piclist2.png' class='imgLazy'  style='width:100%;height:100%;border:0px solid white;'/></div>"
+		    	}
+		    	i++;
+	    
+	    	}
+	    	}
+	    if(flag==0)
+	    	$("#list").html(content);
+	    else
+	    	$("#list").html($("#list").html()+content);
+	    if(size>cunt){
+    		$("#loadMore").show("block");
+    	}else{
+    		$("#loadMore").hide();
+    	}
+    		lazyAll();
+    }
+    function goCont(contentId){
+    	location.href='content.do?id='+contentId+'&copID='+801487+"&channelID=12517&classifiedid="+s_id;
+    }
+  
+    
+  //截取皮肤中的color属性
+	function splitColors(skin){
+		var skinsub = skin.substring(skin.indexOf('.text{')+6,skin.lastIndexOf('.nopagnation')-4)
+		var colors = skinsub.substr(8,8);
+		return colors;
+	}
+  
+    function loadMore(){
+    	page+=1;
+    	new $ppqilu_ajax({"cls" : "Channel_list", "id" : 12517, "sortid" : sort, "page" : page,"style":"2"},
+			function(ajaxObj){
+				size = ajaxObj.totalCount;
+	
+	    		if (ajaxObj.code == ajaxObj.constants.SUCCESS) {
+	
+	    			var objs=ajaxObj.objs;
+	    	
+	    			switch (2) {
+					    case 1:
+						   t1(objs,1);
+						break;
+					    case 2:
+					    	t2(objs,1);
+					    break;
+					    case 3:
+					    	t3(objs,1);
+					    break;
+					    case 4:
+					    	t4(objs,1);
+					    break;
+					}
+	  	  		}
+    	});
+    }
+    
+    
+    setTimeout(function(){
+
+    var status="1";
+  
+		if(status=="0"){
+		cho(0);
+		}
+		else{
+		var cls = 0;
+		var clsid="";
+		var sortId1 = window.sessionStorage.getItem("channelsortId_12517");
+		if(sortId1==null||sortId1==""){
+			cls = clsid;
+		}else{
+			cls = sortId1;
+		}
+		var k=0;
+	
+	
+		k=parseInt(cls);
+		if(isNaN(k)){
+		k=0;
+		};
+		
+	
+		//app(0);
+				var bord="btborder-"+k;
+				var tp1=$("#"+bord).obj().offsetTop;
+				var tp2=$("#btborder-0").obj().offsetTop;
+				var isClss="0";
+				//var tp2=$("#").objs()[0].offsetTop;
+				if(tp2!=tp1){
+					gupordown();
+				}else if(isClss=="1"||isClss==1){
+					gupordown();
+				}
+			cho(k);
+		//$(".promenu-li").show();
+		//firstJudge();
+		// $(".promptu-menu li a span").css("color","#FFFFFF");
+	}
+    },200)
+    
+
+</script>
+</body></html>

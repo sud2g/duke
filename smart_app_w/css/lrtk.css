@@ -1,0 +1,36 @@
+.mainbox {
+	overflow: hidden;
+	position: relative;
+}
+
+.flashbox {
+	overflow: hidden;
+}
+
+.imagebox {
+	text-align: right;
+	position: absolute;
+	bottom:3px;
+	z-index: 999;
+}
+
+.bitdiv {
+	display: inline-block;
+	width: 3px;
+	height: 3px;
+	margin: 0 5px 1px 0px;
+	cursor: pointer;
+	float: right;
+}
+
+.defimg {
+	background-image: url(../images/scrollpagenormal.png);
+	background-size: 3px 3px;
+	background-position: 0px 0px;
+}
+
+.curimg {
+	background-image: url(../images/scrollpagecur.png);
+	background-size: 3px 3px;
+	background-position: 0px 0px;
+}

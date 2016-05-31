@@ -1,0 +1,389 @@
+/** 播放操作 **/
+.tabNWideTable{
+	table-layout:fixed; 
+	WORD-WRAP:break-word; 
+	width:100%; 
+	height:37px;
+}
+#viewImg{
+	width:42px; 
+	vertical-align:middle;
+}
+.player_share {
+	display:inline-block; 
+	vertical-align:middle;
+}
+.player_fenxiang {
+	display:inline-block;
+	background-image: url(../images/bt_xq_share_normal.png);
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	width: 25px;
+	height: 25px;
+	margin-left: 15px;
+	vertical-align: middle;
+}
+.player_fenxiang_down {
+	display:inline-block;
+	background-image: url(../images/bt_xq_share_down.png);
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	width: 25px;
+	height: 25px;
+	margin-left: 15px;
+	vertical-align: middle;
+}
+.player_wsc{
+	background-image: url(../images/bt_xq_collect.png);
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	width: 25px;  
+	height: 25px;
+}
+.player_ysc{
+	background-image: url(../images/favorite_KeepPre.png);
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	width: 25px;  
+	height: 25px;
+}
+.player_SH{
+	position:absolute; 
+	z-index:200000; 
+	top:30px; 
+	left:5px; 
+}
+.player_SH_up{
+	position:absolute; 
+	z-index:200000; 
+	bottom:26px; 
+	left:5px; 
+}
+.player_share_SHDiv{
+	position:relative;
+}
+.player_SHDiv_img{
+	width:63px;
+}
+.player_SH_imtTop{
+	position:absolute; 
+	top:15px; 
+	left:10px; 
+	width:42px;
+}
+.player_SH_up_imtTop{
+	position:absolute; 
+	top:10px; 
+	left:10px; 
+	width:42px;
+}
+.player_SH_imtBottom{
+	position:absolute; 
+	bottom:15px; 
+	left:10px; 
+	width:42px;
+}
+.player_SH_up_imtBottom{
+	position:absolute; 
+	bottom:20px; 
+	left:10px; 
+	width:42px;
+}
+.share_div{
+	position:absolute; 
+	z-index:1; 
+	top:26px; 
+	right:8px;
+}
+.share_bottom_img{
+	width:100px;
+	height:60px;
+}
+.share_img_top{
+	position:absolute; 
+	top:20px; 
+	left:10px; 
+	width:30px;
+}
+.share_img_middle{
+	position:absolute; 
+	top:20px; 
+	left:60px; 
+	width:30px;
+}
+.share_img_bottom{
+	position:absolute; 
+	top:20px;
+	right:10px; 
+	width:30px;
+}
+
+
+.audioPlay_wsc{
+	background-image: url(../images/bt_ypxq_shoucang.png);
+	background-repeat: no-repeat;
+	background-size: 32px 32px;
+	width: 32px;  
+	height: 32px;
+}
+.audioPlay_ysc{
+	background-image: url(../images/bt_ypxq_yishoucang.png);
+	background-repeat: no-repeat;
+	background-size: 32px 32px;
+	width: 32px;  
+	height: 32px;
+}
+.audioPlayer_fenxiang {
+	display:inline-block;
+	background-image: url(../images/ic_ypxq_share.png);
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	width: 20px;
+	height: 20px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.audioPlayer_fenxiang_down {
+	display:inline-block;
+	background-image: url(../images/ic_ypxq_share_down.png);
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	width: 20px;
+	height: 20px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.audioShare_div{
+	position: absolute;
+	top: 28px;
+	right: 1px;
+	z-index: 1;
+}
+.bookShare_div{
+	position: absolute;
+	top: 24px;
+	left: -52px;
+	z-index: 1;
+}
+
+/** 播放显示 **/
+
+#playVew{
+	width:100%; 
+	height:125px; 
+	position:relative;
+}
+.playVewFirstDiv{
+	width:100%; 
+	height:125px; 
+	overflow-y:hidden;
+	position: relative;
+}
+.playVewFirstDiv img{
+	width:100%;
+	position: absolute;
+	-webkit-filter: blur(6px);
+    -moz-filter: blur(6px);
+    -ms-filter: blur(6px);   
+    filter: blur(6px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=6, MakeShadow=false);
+}
+.playVewSenDiv{
+	width:100%; 
+	height:100%; 
+	position:absolute; 
+	top:0px; 
+	left:0px;
+	background-color:rgba(0, 0, 0, 0.35);
+}
+.playVewSenDivBig{
+	width:100%; 
+	height:100%; 
+	position:absolute; 
+	top:0px; 
+	left:0px;
+	background-color:#000000;
+}
+.playVewSenTable{
+	table-layout:fixed; 
+	WORD-WRAP:break-word; 
+	width:100%; 
+	height:100%; 
+	padding:0px 5px 0px 15px;
+}
+.playVewTableTr{
+	height:70px;
+}
+.playVewTableOneTd{
+	width:170px;
+}
+.playVewTableTwoTd{
+	width:47px;
+}
+.playVewTableThreeTd{
+	width:70px; 
+	text-align:right; 
+	vertical-align:top;
+}
+.playVewTableFourTd{
+	width:70px;
+}
+.playVewName{
+	height:16px; 
+	line-height:16px; 
+	font-size:16px; 
+	color:#ffffff;
+}
+.playVewBar{
+	height:31px; 
+	line-height:31px;
+}
+.playVewBarDiv{
+	position:relative; 
+	top:16px; 
+	width:100%; 
+	height:2px; 
+	background-image:url(../images/bar_ypxq_progress_bg.png);
+}
+.playVideoBarDiv{
+	position:relative; 
+	top:0px; 
+	width:100%; 
+	height:2px; 
+	background-image:url(../images/bar_ypxq_progress_bg.png);
+}
+.playVewBarSenDiv{
+	position:absolute; 
+	top:0px; 
+	left:0px; 
+	width:0px; 
+	height:100%; 
+	background-image:url(../images/bar_ypxq_progress.png);
+}
+.timeBarImg{
+	width:8px; 
+	position:absolute; 
+	top:-3px; 
+	left:0px;
+}
+.playVewTime{
+	height:11px; 
+	line-height:11px; 
+	font-size:11px; 
+	color:#e5e5e5;
+}
+.playVewBut{
+	width:70px; 
+	height:70px; 
+	position:relative;
+}
+#rotaImg{
+	width:70px; 
+	vertical-align:middle; 
+	display:none;
+}
+#btnPlay{
+	width:50px; 
+	position:absolute; 
+	top:10px; 
+	left:10px;
+}
+
+#playVideoVew{
+	width:100%;  
+	position:relative; 
+	display:block;
+}
+.playVideoVewFirstDiv{
+	width: 100%;
+	overflow-y: hidden;
+}
+.playVideoVewFirstDiv img{
+	width: 100%;
+}
+.playVideoVewSenTable{
+	table-layout: fixed;
+	WORD-WRAP: break-word;
+	width: 100%;
+	height: 100%;
+}
+.playVideoTableTd{
+	width: 15px;
+}
+.playVideoTableNme{
+	vertical-align:bottom; 
+	line-height:14px; 
+	font-size:14px; 
+	color:#ffffff;
+}
+.playVideoTablePlaImg{
+	width:87px; 
+	vertical-align:middle;
+}
+.playVideoTableTimeBar{
+	text-align:right; 
+	vertical-align:top; 
+	line-height:10px; 
+	font-size:10px; 
+	color:#b2b2b2;
+}
+#playVideoDiv{
+	width:100%; 
+	position:relative; 
+	background-color:#000000; 
+	display:none;
+}
+.playViedoVewDiv{
+	width:100%; 
+	height:100%; 
+	position:absolute; 
+	top:0px; 
+	left:0px;
+}
+.playViedoVewSenDiv{ 
+	text-indent:15px; 
+	width:100%; 
+	height:26px; 
+	line-height:38px; 
+	position:absolute; 
+	top:0px; left:0px; 
+	font-size:14px; 
+	color:#ffffff;
+}
+.playViedoVewName{
+	vertical-align:bottom; 
+	line-height:14px; 
+	font-size:14px; 
+	color:#ffffff; 
+	padding-left:15px;
+}
+.playViedoTableTr{
+	height:54px; 
+}
+#playBarDiv{
+	width:100%; 
+	height:100%; 
+	background-color:rgba(0, 0, 0, 0.8); 
+	text-align:center;  
+	display:block;
+}
+.playVideoVewTable{
+	table-layout:fixed; 
+	WORD-WRAP:break-word; 
+	height:27px; 
+	width:100%;
+}
+.playVideoVewInnerTable{
+	table-layout:fixed; 
+	WORD-WRAP:break-word; 
+	margin:0px auto;
+	height:27px; 
+	width:90%;
+}
+.playVideoVewTableTTT{
+	font-size:10px; 
+	color:#757575; 
+	line-height:27px; 
+	width:57px; 
+	vertical-align:top;
+}

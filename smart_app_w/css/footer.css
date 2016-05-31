@@ -1,0 +1,256 @@
+@CHARSET "UTF-8";
+
+a:link,a:visited,a:hover {
+	text-decoration: none; /*超链接无下划线*/
+}
+
+/*点击后触发*/
+a {
+	
+}
+
+#footer_wap {
+	margin-top: 30px;
+	display: none;
+}
+
+/* 回顶部 **/
+.footer_toTop {
+	background: url(../images/bt_index_top.png) no-repeat;
+	width: 48px;
+	height: 16px;
+	background-size: 33px 18px;
+	background-position: 0px 0px;
+	margin-top: -5px;
+	float: right;
+}
+
+/*登录, 当前用户*/
+.loginDiv {
+	border-top: 1px solid #ebebeb;
+	background-color: #f7f7f7;
+	font-family: "黑体", Arial, sans-serif /*{global-font-family}*/;
+	font-size: 15px;
+	font-weight: bold;
+	color: #2b597d;
+	padding-top: 10px;
+	height: 34px;
+}
+
+#loginIn {
+	margin-left: 15px;
+}
+
+.loginDiv a {
+	font-family: Arial, sans-serif /*{global-font-family}*/;
+	font-weight: normal;
+	font-size: 13px;
+	color: #5c5c5c;
+}
+
+#user {
+	font-family: Arial, sans-serif /*{global-font-family}*/;
+	font-size: 15px;
+	font-weight: bold;
+	color: #2b597d;
+	margin-left: 15px;
+	display: -moz-inline-box;
+	display: inline-block;
+	height: 18px;
+	overflow:hidden; 
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/*底部更多*/
+.footer_footer {
+	margin-top: -10px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border-top: 1px solid #ebebeb;
+	background-color: #f2f2f2;
+	height: 63px;
+}
+
+#footerMore {
+	font-family: "黑体", Arial, sans-serif /*{global-font-family}*/;
+	font-size: 14px;
+	color: #1a1a1a;
+}
+
+#footerMore a {
+	font-family: "黑体", Arial, sans-serif /*{global-font-family}*/;
+	font-size: 13px;
+	color: #5c5c5c;
+}
+
+#footerMore span {
+	margin-left: 9px;
+	margin-right: 9px;
+	color: #6c6c6c;
+}
+
+/*版权*/
+#copyRightDiv {
+	padding-top: 15px;
+	font-family: Arial, sans-serif /*{global-font-family}*/;
+	font-size: 10px;
+	color: #999999;
+}
+
+/**导航弹出层*/
+#deskDiv {
+	position: fixed;
+	left: 320px;
+	top: 0px;
+	z-index: 9000;
+	background: transparent;
+}
+
+.tableDiv {
+	background: url(../images/desk-bg.png) repeat;
+}
+
+.deskNavigation {
+	position: relative;
+	left: -49px;
+	width: 52px;
+	margin-right: -5px;
+}
+
+.desk {
+	width: 65px;
+	padding: 0px;
+}
+
+.secondScroll img {
+	/*background-color: black;*/
+}
+
+.desk div {
+	font-family: "黑体", Arial, sans-serif /*{global-font-family}*/;
+	font-size: 12px;
+	color: #6f6f6f;
+}
+
+.mask {
+	background-color: #000000;
+	opacity: 0.6;
+	z-index: 800;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+/*轮播广告*/
+.firstScroll {
+	width: 65px;
+	height: 310px;
+	position: relative;
+	overflow: hidden;
+}
+
+.firstScroll .secondScroll {
+	position: absolute;
+	left: 0;
+	width: 65px; /*设置6张图片*/
+	background: #fff;
+	padding: 0px;
+	background-color: transparent;
+}
+
+.firstScroll .secondScroll div {
+	
+}
+
+/*没有内容*/
+.ListOrContent_nofound {
+	margin: 15px auto 0 15px;
+	color: #6B6B6B;
+}
+
+.liveVideo {
+	margin-top: 37px;
+	width: 77px;
+	height: 60px;
+	background: url("../images/nav.png") no-repeat;
+	background-size: 150px 240px;
+	background-position: -50px -52px;
+}
+
+.video {
+	width: 77px;
+	height: 60px;
+	background: url("../images/nav.png") no-repeat;
+	background-size: 150px 240px;
+	background-position: 5px -100px;
+}
+
+.liveAudio {
+	width: 77px;
+	height: 60px;
+	background: url("../images/nav.png") no-repeat;
+	background-size: 150px 240px;
+	background-position: 6px -146px;
+}
+
+.audio {
+	width: 77px;
+	height: 60px;
+	background: url("../images/nav.png") no-repeat;
+	background-size: 150px 240px;
+	background-position: -50px -100px;
+}
+
+.book_indexPro {
+	width: 77px;
+	height: 60px;
+	background: url("../images/nav.png") no-repeat;
+	background-size: 150px 240px;
+	background-position: 5px 0px;
+}
+
+.subject {
+	width: 77px;
+	height: 58px;
+	background: url("../images/nav.png") no-repeat;
+	background-size: 150px 240px;
+	background-position: 5px -51px;
+}
+
+.site {
+	width: 77px;
+	height: 60px;
+	background: url("../images/nav.png") no-repeat;
+	background-size: 150px 240px;
+	background-position: -48px 0px;
+}
+.microblog{
+	width: 77px;
+	height: 60px;
+	background: url("../images/nav.png") no-repeat;
+	background-size: 150px 240px;
+	background-position: 4px -194px;
+}
+.footer_navUp {
+	width: 70px;
+	position: fixed;
+	left: 256px;
+	top: 3px;
+	z-index: 9500;
+	height: 20px;
+	//background: url("../images/nav.png") no-repeat;
+	background-size: 160px 240px;
+	background-position: -69px -192px;
+}
+
+.footer_navDown {
+	width: 70px;
+	position: fixed;
+	left: 256px;
+	top: 320px;
+	height: 20px;
+	//background: url("../images/nav.png") no-repeat;
+	background-size: 160px 240px;
+	background-position: -69px -161px;
+}

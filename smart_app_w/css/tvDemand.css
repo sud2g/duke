@@ -1,0 +1,77 @@
+#tvDemand_List{
+	width: 100%;
+}
+.partTable_tvpart{
+	 width:100%;
+	 cellpadding:0;
+	 border:0;
+	 cellspacing:0;
+	 border-bottom: solid #ebebeb 1px;
+}
+.partTable{
+	 width:100%;
+	 cellpadding:0;
+	 border:0;
+	 cellspacing:0;
+	 border-bottom: solid #ebebeb 1px;
+}
+#tvDemand_PartList{
+	width: 100%;
+}
+.tvD_Part_Top{
+	width:100%;
+	height:30px;
+	background: url('../../../images/topdaohang.png');
+}
+#tvDemand_Details{
+}
+.d1 {
+	width: 158px;
+	padding: 0px 0 0 1px;
+	float: left;
+	border-bottom: #cecece solid 1px;
+	border-right: #cecece solid 1px;
+	background-color: #ececec;
+}
+.d2 {
+	font-size: 14px;
+	color: #383838;
+	margin: 10px 0 0 0;
+	height:30px;
+	vertical-align: middle;
+}
+.wap_Content_TextArea{
+	width: 100%;
+}
+.demandmianbao{
+	width: 100%;
+	height: 30px;
+	background: url('../../../images/topdaohang.png');
+}
+.demandmianbao td {
+	vertical-align: middle;
+	text-align: left;
+	line-height: 30px;
+}
+.tvDemand_typeByTime{
+	width:100%;
+	height:35px;
+	background: url('../../../images/u56_normal.png');
+}
+.tag_down {
+	color: #c16d00;
+	font-size:15px;
+	font-weight:bold;
+	border: #9c9c9c solid 1px;
+	background-image: -webkit-gradient(linear, 0 100%, 0 0, color-stop(0, #f8f8f8),
+		color-stop(0.01,  #ececec), color-stop(1, #ececec) );
+}
+
+.tag_up {
+	color: #383838;
+	font-size:15px;
+	font-weight:bold;
+	border-color: #cacaca;
+	background-image: -webkit-gradient(linear, 0 100%, 0 0, color-stop(0, #ececec),
+		color-stop(0.01, #ececec), color-stop(1, #f8f8f8) );
+}
