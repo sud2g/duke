@@ -1,8 +1,0 @@
-{
-	"data":[
-			{"id":"a","title":"AngularJs","author":"google","price":"120","pubdata":"2009-02-05","status":true,"images":["a","b","c","d"]},
-			{"id":"b","title":"Bootstrap","author":"twitter","price":"100","pubdata":"2011-10-10","status":false,"images":["a","b","c","d"]},
-			{"id":"c","title":"C++","author":"ber","price":"150","pubdata":"1983-12-22","status":true,"images":["a","b","c","d"]},
-			{"id":"d","title":"Django","author":"python","price":"100","pubdata":"2008-09-01","status":false,"images":["a","b","c","d"]}
-		]
-}

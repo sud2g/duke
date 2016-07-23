@@ -1,8 +1,0 @@
-a,a:hover{text-decoration:none;}
-.fade{
-	opacity:1;
-}
-.fade.ng-hide{
-	-webkit-transition-duration:2;
-	opacity:0;
-}
