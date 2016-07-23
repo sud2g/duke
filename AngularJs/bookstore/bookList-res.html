@@ -1,0 +1,46 @@
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+		<select ng-model="orderByProp" class="form-control">
+			<option value="title">title</option>
+			<option value="author">author</option>
+			<option value="price">price</option>
+			<option value="pubdata">pubdata</option>
+		</select>
+	</div>
+	<div class="col-sm-4">
+		<input ng-model="query" class="form-control" placeholder="Enter query">
+	</div>
+</div>
+<p></p> 
+
+<ul class="list-group">
+						  <!--  ng-repeat="book in books [http 写法]-->
+	<li ng-hide="flag" class="list-group-ite fade" ng-repeat="book in books.data | filter:query | orderBy:orderByProp">
+		<div class="row">
+			<div class="col-sm-3">
+				<a href="#/{{book.id}}">
+					<img src="img/{{book.id}}.png" alt="{{book.id}}" class="img-responsive img-thumbnail"/>
+				</a>
+			</div>
+			<div class="col-sm-9">
+				<div class="text-right">
+					<label class="label {{book.status | getStatusLabelFilter}}">{{book.status | checkStatusFilter}}</label>
+				</div>
+				<blockquote>
+					<h2>
+						<a href="#/{{book.id}}">{{book.title}}</a>
+					</h2>
+					<footer>{{book.author}}</footer>
+				</blockquote>
+				<div class="text-right">
+					<button ng-click="flag=true" class="btn btn-primary">
+						<span class="glyphicon glyphicon-shopping-cart"></span>
+						{{book.price}}
+					</button>
+				</div>
+			</div>
+		</d>
+	</li>
+
+</ul>

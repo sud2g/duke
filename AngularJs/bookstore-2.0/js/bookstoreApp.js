@@ -1,0 +1,1 @@
+var bookstoreApp = angular.module("bookstoreApp",["bookstoreRoutes","bookstoreService","bookstoreFilters","bookstoreController","ngAnimate"]);
